@@ -23,6 +23,29 @@
   .finding h4{font-size:8.6pt;font-weight:800;color:var(--af-ink);margin-bottom:1mm;line-height:1.6}
   .finding p{font-size:7.8pt;line-height:1.75;color:var(--af-text)}
   .idtag{font-family:var(--af-mono);direction:ltr;display:inline-block;font-size:.86em;font-weight:700;color:var(--af-signal-deep)}
+  /* تراکم کمتر، خوانایی بیشتر — فقط در همین گزارش */
+  .fw .a4-content{gap:6.5mm}
+  .fw .af-lead{line-height:2}
+  .fw .af-table tbody td{padding:2.4mm 3mm;line-height:1.75}
+  .fw .af-ptable tbody td{padding:2.7mm 3.5mm;line-height:1.75}
+  .fw .finding{padding-top:3mm}
+  .fw .finding p{line-height:1.9}
+  .fw .af-note p{line-height:1.95}
+  .fw .af-small{line-height:1.85}
+  .fw .tight .af-table thead th{padding:2.2mm 3mm}
+  /* تایپوگرافی درشت‌تر و خلوت‌تر */
+  .fw .af-lead{font-size:9.5pt}
+  .fw .af-table thead th,.fw .af-ptable thead th{font-size:8pt}
+  .fw .af-table tbody td,.fw .af-ptable tbody td{font-size:8.15pt}
+  .fw .finding .fn{font-size:7.4pt}
+  .fw .finding h4{font-size:9.3pt}
+  .fw .finding p{font-size:8.5pt}
+  .fw .af-note-title{font-size:9pt}
+  .fw .af-note p{font-size:8.6pt}
+  .fw .af-small{font-size:8.1pt}
+  .fw .af-status-row{font-size:8.1pt}
+  .fw .af-figure-title{font-size:10pt}
+  .fw .tight .af-table tbody td{padding:1.9mm 3mm;line-height:1.6}
 </style>
 </head>
 <body>
@@ -30,7 +53,7 @@
 <div class="demo-toolbar no-print">
   <div class="t">
     <img src="svg/logo%20ati%20farzam.svg" alt="آتی فرزام" style="height:30px;width:auto" />
-    <div><b>گزارش فنی فریم‌ور دستگاه ردیاب — آتی فرزام</b><span>نسخهٔ ۱٫۰ · سیزده صفحهٔ A4 · مبنا: دفتر ثبت تغییرات فریم‌ور و مقایسهٔ دو نسخهٔ کد</span></div>
+    <div><b>گزارش فنی فریم‌ور دستگاه ردیاب — آتی فرزام</b><span>نسخهٔ ۱٫۰ · چهارده صفحهٔ A4 · مبنا: دفتر ثبت تغییرات فریم‌ور و مقایسهٔ دو نسخهٔ کد</span></div>
   </div>
   <div class="dt-actions">
     <select class="dt-zoom" onchange="document.querySelector('.af-workspace').style.zoom=this.value" aria-label="بزرگ‌نمایی">
@@ -44,7 +67,7 @@
 
 <div class="demo-note no-print"><b>خروجی PDF:</b> چاپ ← مقصد «Save as PDF» · کاغذ A4 · حاشیه‌ها None · مقیاس ۱۰۰٪ · گزینهٔ Background graphics فعال. این سند گزارش مهندسی فریم‌ور است؛ همهٔ ادعاهای فنی آن به دفتر ثبت تغییرات و کد مبدأ دو نسخه ارجاع دارد.</div>
 
-<main class="af-workspace">
+<main class="af-workspace fw">
 
 <!-- ══════════ صفحهٔ ۱ — جلد ══════════ -->
 <section class="a4-page a4-cover">
@@ -73,7 +96,7 @@
       <div class="cs-item"><i></i><b>خلاصه و وضعیت اولیه</b><span>جمع‌بندی مدیریتی، دامنهٔ بررسی و علائم میدانیِ فریم‌ور تحویلی</span><span class="pg">صفحهٔ ۲ و ۳</span></div>
       <div class="cs-item aqua"><i></i><b>نقص‌های بحرانی</b><span>چهار نقصی که می‌توانستند دستگاه را از کار بیندازند یا داده و تنظیمات را تخریب کنند</span><span class="pg">صفحهٔ ۴ و ۵</span></div>
       <div class="cs-item sun"><i></i><b>به‌روزرسانی و پایداری</b><span>زنجیرهٔ به‌روزرسانی دومرحله‌ای، پایداری GSM و کیفیت داده‌های GPS</span><span class="pg">صفحهٔ ۶ تا ۹</span></div>
-      <div class="cs-item coral"><i></i><b>وضعیت کنونی و گام‌های بعد</b><span>پیکربندی و امنیت، مسائل باز، توصیه‌های مهندسی و پیوست کامل تغییرات</span><span class="pg">صفحهٔ ۱۰ تا ۱۳</span></div>
+      <div class="cs-item coral"><i></i><b>وضعیت کنونی و گام‌های بعد</b><span>پیکربندی و امنیت، مسائل باز، توصیه‌های مهندسی و پیوست کامل تغییرات</span><span class="pg">صفحهٔ ۱۰ تا ۱۴</span></div>
     </div>
 
     <div class="af-stats" style="margin-top:9mm">
@@ -116,13 +139,13 @@
     <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
   </header>
 
-  <div class="a4-content" style="gap:4.6mm">
+  <div class="a4-content" style="gap:3.8mm">
     <div>
       <div class="af-eyebrow"><span class="n">۰۱</span> خلاصهٔ اجرایی</div>
       <h2 class="af-h2">دستگاه بیشتر اوقات کار می‌کرد؛ اما چند نقص پنهان، آن را غیرقابل‌اعتماد کرده بود</h2>
     </div>
 
-    <p class="af-lead">فریم‌ور تحویل‌گرفته‌شده (نسخهٔ <span class="af-ltr">B1.05.20</span>) در کار عادی وظیفه‌اش را انجام می‌داد، اما در شرایطی که دیر یا زود در میدان پیش می‌آید ـ صف ارسالِ پر پس از یک دورهٔ آفلاین، سیم‌کارت کند، قطع‌ووصل برق، یا یک به‌روزرسانی از راه دور ـ رفتارش از «کندی» تا «ازکارافتادن کامل» تغییر می‌کرد. بررسی خط‌به‌خطِ تفاوت دو نسخه، ۲۹ تغییر معنادار را آشکار کرد: ۴ نقص بحرانی، ۱۰ نقص با ریسک بالا و بقیه بهبودهای متوسط و خفیف. این گزارش توضیح می‌دهد هر نقص در عمل چه معنایی برای دستگاه و داده‌های شما داشت، چه چیزی در فریم‌ور عوض شد و امروز کجا ایستاده‌ایم.</p>
+    <p class="af-lead">فریم‌ور تحویل‌گرفته‌شده (نسخهٔ <span class="af-ltr">B1.05.20</span>) در کار عادی وظیفه‌اش را انجام می‌داد، اما در شرایطی که دیر یا زود در میدان پیش می‌آید ـ صف پُر پس از آفلاین، سیم‌کارت کند، قطع‌ووصل برق یا به‌روزرسانی از راه دور ـ رفتارش از «کندی» تا «ازکارافتادن کامل» تغییر می‌کرد. بررسی خط‌به‌خطِ تفاوت دو نسخه، ۲۹ تغییر معنادار را آشکار کرد: ۴ نقص بحرانی، ۱۰ نقص با ریسک بالا و بقیه بهبودهای متوسط و خفیف. این گزارش توضیح می‌دهد هر نقص در عمل چه معنایی برای دستگاه و داده‌های شما داشت و امروز کجا ایستاده‌ایم.</p>
 
     <div class="af-stats">
       <div class="af-stat"><div class="af-stat-label">نقص بحرانی ـ اصلاح‌شده</div><div class="af-stat-value">۴<span class="af-stat-unit">مورد</span></div><div class="af-stat-delta"><span class="dot bad"></span>۲ مورد خطر ازکارافتادن کامل + ۱ تخریب حافظه + ۱ پاک‌شدن تنظیمات</div></div>
@@ -138,13 +161,13 @@
       </div>
       <div class="af-status-list">
         <div class="af-status-row"><span class="l"><span class="dot bad"></span>بحرانی ـ ازکارافتادن دستگاه یا تخریب حافظه</span><span class="v">۴ مورد</span></div>
-        <div class="af-status-row"><span class="l"><span class="dot warn"></span>بالا ـ اختلال دائمی یا قطعیِ چندده‌دقیقه‌ای در میدان</span><span class="v">۱۰ مورد</span></div>
+        <div class="af-status-row"><span class="l"><span class="dot warn"></span>بالا ـ اختلال دائمی یا قطعیِ چندساعته در میدان</span><span class="v">۱۰ مورد</span></div>
         <div class="af-status-row"><span class="l"><span class="dot sig"></span>متوسط ـ دادهٔ نادرست، دیررس یا پیکربندی ناامن</span><span class="v">۵ مورد</span></div>
         <div class="af-status-row"><span class="l"><span class="dot s3"></span>کم ـ بهبود کیفیت، قابلیت اختیاری و پاک‌سازی</span><span class="v">۹ مورد</span></div>
       </div>
       <div style="margin-top:3mm">
         <div class="af-stack"><i style="width:14%;background:var(--af-coral)"></i><i style="width:36%;background:var(--af-sun)"></i><i style="width:18%;background:var(--af-signal)"></i><i style="width:32%;background:var(--af-ink-20)"></i></div>
-        <div class="af-caption" style="margin-top:1.5mm">یک مدخل (MAIN-020) صرفاً سابقهٔ دسته‌بندی است و خودش تغییری ندارد؛ ۲۸ ردیف دیگر رتبهٔ شدت دارند. فهرست کامل با شناسهٔ هر تغییر در پیوست (صفحهٔ ۱۲ و ۱۳) آمده است.</div>
+        <div class="af-caption" style="margin-top:1.5mm">یک مدخل (MAIN-020) سابقهٔ دسته‌بندی است و تغییری ندارد؛ ۲۸ ردیف دیگر رتبهٔ شدت دارند و فهرست کاملشان در پیوست (صفحهٔ ۱۲ تا ۱۴) است.</div>
       </div>
       <figcaption class="af-figure-foot"><span>مبنای شمارش: جدول رتبه‌بندی شدت در دفتر ثبت تغییرات فریم‌ور</span><span class="af-ltr">B1.05.20 → B1.06.60</span></figcaption>
     </figure>
@@ -152,15 +175,15 @@
     <div>
       <div class="af-eyebrow"><span class="n">۰۱ ـ الف</span> سه نتیجهٔ اصلی بررسی</div>
       <div class="af-grid-3" style="margin-top:2mm">
-        <div class="finding"><div class="fn">نتیجهٔ ۱</div><h4>به‌روزرسانی، خودش بزرگ‌ترین خطر بود</h4><p>ترکیب بوت‌لودر قدیمی و چیدمان جدید حافظه می‌توانست دستگاه را درست بعد از یک به‌روزرسانیِ «موفق» برای همیشه خاموش کند؛ بدون هیچ نشانه‌ای جز ناپدیدشدن دستگاه از ناوگان (صفحهٔ ۴).</p></div>
-        <div class="finding"><div class="fn">نتیجهٔ ۲</div><h4>بیشتر «یخ‌زدگی»ها از عجلهٔ فریم‌ور بود، نه از شبکه</h4><p>مهلت‌های چندثانیه‌ای برای سیم‌کارت و شبکه، ماژول GSM را وسط ثبت‌شدن در شبکه ریست می‌کرد و دستگاه ده‌ها دقیقه آفلاین می‌ماند. بودجه‌های صبر واقع‌بینانه و نگهبان ارتباطی این چرخه را شکست (صفحهٔ ۷).</p></div>
-        <div class="finding"><div class="fn">نتیجهٔ ۳</div><h4>حالا دستگاه خودش را گزارش می‌کند</h4><p>جعبه‌سیاه تشخیصیِ قابل‌فعال‌سازی و پرس‌وجوهای پیامکی جدید باعث می‌شود بیشتر خرابی‌های میدانی از راه دور و از روی خودِ داده‌ها تشخیص داده شود، نه با اعزام تکنسین (صفحهٔ ۹).</p></div>
+        <div class="finding"><div class="fn">نتیجهٔ ۱</div><h4>به‌روزرسانی، خودش بزرگ‌ترین خطر بود</h4><p>ترکیب بوت‌لودر قدیمی و چیدمان جدید حافظه، دستگاه را درست بعد از یک به‌روزرسانیِ «موفق» برای همیشه خاموش می‌کرد؛ بی‌هیچ نشانه‌ای جز ناپدیدشدن از ناوگان (صفحهٔ ۴).</p></div>
+        <div class="finding"><div class="fn">نتیجهٔ ۲</div><h4>بیشتر «یخ‌زدگی»ها از عجلهٔ فریم‌ور بود، نه از شبکه</h4><p>مهلت‌های چندثانیه‌ای، ماژول GSM را وسط ثبت‌شدن در شبکه ریست می‌کرد و دستگاه ساعت‌ها ـ بیش از ۹۰ دقیقه ـ مرده می‌ماند و فقط با ریست برمی‌گشت. بودجه‌های صبر و نگهبان ارتباطی این چرخه را شکست (صفحهٔ ۷).</p></div>
+        <div class="finding"><div class="fn">نتیجهٔ ۳</div><h4>حالا دستگاه خودش را گزارش می‌کند</h4><p>جعبه‌سیاه تشخیصی و پرس‌وجوهای پیامکی جدید باعث می‌شود بیشتر خرابی‌های میدانی از راه دور و از روی داده‌ها تشخیص داده شود، نه با اعزام تکنسین (صفحهٔ ۹).</p></div>
       </div>
     </div>
 
     <div class="af-conclusion af-push">
       <div class="af-note-title"><span class="dot sig"></span>جمع‌بندی برای تصمیم کارفرما</div>
-      <p class="af-small" style="font-size:8.2pt;color:var(--af-text)">نسخهٔ <span class="af-ltr">B1.06.60</span> به‌همراه بوت‌لودر <span class="af-ltr">00.02.06</span> همهٔ نقص‌های بحرانی و پرریسکی را که در این بررسی شناسایی شد برطرف می‌کند و مسیر ارتقای آینده را هم امن‌تر می‌سازد. با این حال، برای این نسخه لاگ آزمون آزمایشگاهیِ قابل‌بازتولید ضمیمهٔ مستندات نیست؛ توصیهٔ مهندسی ما بهره‌برداری مرحله‌ای و پایش‌شده است، نه جایگزینی یک‌بارهٔ کل ناوگان. مبنا و حدود این توصیه در صفحهٔ ۱۱ آمده است.</p>
+      <p class="af-small" style="font-size:8.2pt;color:var(--af-text)">نسخهٔ <span class="af-ltr">B1.06.60</span> به‌همراه بوت‌لودر <span class="af-ltr">00.02.06</span> همهٔ نقص‌های بحرانی و پرریسکِ شناسایی‌شده در این بررسی را برطرف می‌کند و مسیر ارتقای آینده را هم امن‌تر می‌سازد. با این حال برای این نسخه لاگ آزمون آزمایشگاهیِ قابل‌بازتولید ضمیمهٔ مستندات نیست؛ توصیهٔ مهندسی ما بهره‌برداری مرحله‌ای و پایش‌شده است، نه جایگزینی یک‌بارهٔ کل ناوگان (مبنا و حدودش در صفحهٔ ۱۱).</p>
     </div>
   </div>
 
@@ -168,7 +191,7 @@
     <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
     <span class="dots3"><i></i><i></i><i></i></span>
     <span>محرمانه ـ ویژهٔ کارفرما</span>
-    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۰۲ / ۱۳</span></span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۰۲ / ۱۴</span></span>
   </footer>
 </section>
 
@@ -184,27 +207,27 @@
     <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
   </header>
 
-  <div class="a4-content" style="gap:4.6mm">
+  <div class="a4-content" style="gap:3mm">
     <div>
       <div class="af-eyebrow"><span class="n">۰۲</span> نقطهٔ شروع ـ وضعیت فریم‌ور تحویلی</div>
       <h2 class="af-h2">علائمی که در میدان دیده می‌شد، هر کدام یک ریشهٔ مشخص در کد داشت</h2>
     </div>
 
-    <p class="af-lead">مبنای این بررسی، مقایسهٔ مستقیم و خط‌به‌خطِ کد مبدأ دو نسخه است: برنامهٔ اصلی <span class="af-ltr">B1.05.20</span> در برابر <span class="af-ltr">B1.06.60</span>، بوت‌لودر <span class="af-ltr">00.02.05</span> در برابر <span class="af-ltr">00.02.06</span> و ابزار جدید به‌روزرسانی میدانی. برای هر تفاوت، سناریوی خرابیِ متناظر در نسخهٔ قدیم بازسازی شد تا معلوم شود کاربر در میدان دقیقاً چه می‌دیده است. جدول زیر نقشهٔ همین علائم است؛ ستون آخر شناسهٔ تغییری است که در دفتر ثبت تغییرات به آن پرداخته شده و در صفحات بعد شرحش می‌آید.</p>
+    <p class="af-lead">مبنای این بررسی، مقایسهٔ خط‌به‌خطِ کد مبدأ دو نسخه است: برنامهٔ اصلی <span class="af-ltr">B1.05.20</span> در برابر <span class="af-ltr">B1.06.60</span> و بوت‌لودر <span class="af-ltr">00.02.05</span> در برابر <span class="af-ltr">00.02.06</span>؛ برای هر تفاوت، سناریوی خرابی متناظر بازسازی شد تا معلوم شود کاربر در میدان دقیقاً چه می‌دیده است.</p>
 
-    <div class="af-table-wrap">
+    <div class="af-table-wrap tight">
       <div class="af-h3" style="padding:3mm 3.5mm 0">علائم میدانی نسخهٔ تحویلی و ریشهٔ فنی آن‌ها</div>
       <table class="af-table">
-        <thead><tr><th style="width:26%">علامت در میدان</th><th style="width:38%">سازوکار فنی (به زبان ساده)</th><th style="width:20%">پیامد عملی</th><th style="width:16%">تغییر مرتبط</th></tr></thead>
+        <thead><tr><th style="width:24%">علامت در میدان</th><th style="width:44%">سازوکار فنی (به زبان ساده)</th><th style="width:18%">پیامد عملی</th><th style="width:14%">تغییر مرتبط</th></tr></thead>
         <tbody>
-          <tr><td class="td-bold">دستگاه بعد از به‌روزرسانی دیگر بالا نمی‌آید</td><td>نشانگر پشته از بوت‌لودر قدیمی به ارث می‌رسید و وسط داده‌های برنامه می‌نشست؛ پاک‌سازی اولیهٔ حافظه، خودِ مسیر بازگشت را پاک می‌کرد</td><td>خاموشی کامل؛ نجات فقط با پروگرامر</td><td class="td-num"><span class="idtag">MAIN-001</span> ـ <span class="idtag">FOTA-001</span></td></tr>
-          <tr><td class="td-bold">آنلاین است، پیامک جواب می‌دهد، ولی هیچ رکوردی نمی‌رسد</td><td>شمارندهٔ «رکورد ارسال‌نشده» با صف واقعی ناهم‌گام می‌شد؛ یا حلقهٔ دریافت ماژول اشباع و پردازنده برای همیشه کر می‌شد</td><td>سکوت کامل داده با ظاهر کاملاً سالم</td><td class="td-num"><span class="idtag">MAIN-006</span> ـ <span class="idtag">MAIN-009</span></td></tr>
-          <tr><td class="td-bold">ریست‌های دوره‌ای، به‌ویژه بعد از دوره‌های آفلاین</td><td>هنگام بسته‌بندی ۱۵ رکورد، ۵۵ تا ۳۵۵ بایت بیرون از بافر نوشته می‌شد و روی داده‌های کناری می‌نشست</td><td>تخریب حافظه، ریست واچ‌داگ، فریم‌های ناقص روی سرور</td><td class="td-num"><span class="idtag">MAIN-002</span></td></tr>
-          <tr><td class="td-bold">بعد از به‌روزرسانی دستگاه «نو» شده است</td><td>یک فرمان مهاجرتی هنگام ارتقا، آدرس سرور، APN، گذرواژهٔ پیامک و شماره‌های مجاز را به مقدار کارخانه برمی‌گرداند</td><td>از دست رفتن پیکربندی مشتری در کل ناوگانِ به‌روزشده</td><td class="td-num"><span class="idtag">MAIN-004</span></td></tr>
-          <tr><td class="td-bold">دستگاهِ تنظیم‌شده با IP دیگر وصل نمی‌شود</td><td>حرف اول آدرس سرور که «حالت IP» را مشخص می‌کند، در هر راه‌اندازی بازنویسی و مُد دستگاه گم می‌شد</td><td>آفلاین دائمی، در حالی که دستگاه به پیامک پاسخ می‌دهد</td><td class="td-num"><span class="idtag">MAIN-003</span></td></tr>
-          <tr><td class="td-bold">ثبت در شبکه ده‌ها دقیقه طول می‌کشد</td><td>مهلت‌های چهارثانیه‌ای، ماژول را وسط ثبت سیم‌کارت یا اتصال GPRS ریست می‌کرد و هر ریست، تلاش بعدی را کندتر می‌کرد</td><td>قطعی‌های ۲۰ تا ۹۰ دقیقه‌ای پس از روشن‌شدن یا جابه‌جایی سلولی</td><td class="td-num"><span class="idtag">MAIN-007</span> ـ <span class="idtag">MAIN-008</span></td></tr>
-          <tr><td class="td-bold">GPS ساعت‌ها برنمی‌گردد</td><td>خواندن دادهٔ GPS پشت وقفهٔ «هر ثانیه یک پالس» قفل بود؛ وقتی فیکس از دست می‌رفت، پالس هم قطع می‌شد و دادهٔ بازگشت خوانده نمی‌شد</td><td>خلأ چندساعته در مسیر، با وجود سلامت GSM</td><td class="td-num"><span class="idtag">MAIN-010</span></td></tr>
-          <tr><td class="td-bold">زمان رکوردها تکراری است؛ پایان سفر دیر می‌رسد</td><td>مهر زمانی در چرخهٔ پیام‌های GPS یخ می‌زد و دستگاه پیش از تخلیهٔ صف ارسال به خواب می‌رفت</td><td>دادهٔ زمانی نادرست و گزارش دیرهنگام پایان سفر</td><td class="td-num"><span class="idtag">MAIN-012</span> ـ <span class="idtag">MAIN-013</span></td></tr>
+          <tr><td class="td-bold">دستگاه بعد از به‌روزرسانی دیگر بالا نمی‌آید</td><td>Stack Pointerِ به‌ارث‌رسیده از بوت‌لودر وسط داده‌های برنامه می‌نشست؛ پاک‌سازی اولیهٔ حافظه (‎.bss‎)‏، Return Address روی Stack را صفر می‌کرد</td><td>خاموشی کامل؛ نجات فقط با پروگرامر</td><td class="td-num"><span class="idtag">MAIN-001</span> ـ <span class="idtag">FOTA-001</span></td></tr>
+          <tr><td class="td-bold">آنلاین است و پیامک جواب می‌دهد، ولی رکوردی نمی‌رسد</td><td>شمارندهٔ «رکورد ارسال‌نشده» از صف عقب می‌ماند، یا حلقهٔ دریافت ماژول اشباع و پردازنده کر می‌شد</td><td>سکوت کامل داده با ظاهر کاملاً سالم</td><td class="td-num"><span class="idtag">MAIN-006</span> ـ <span class="idtag">MAIN-009</span></td></tr>
+          <tr><td class="td-bold">ریست‌های دوره‌ای، به‌ویژه بعد از دوره‌های آفلاین</td><td>بسته‌بندی ۱۵ رکورد، ۵۵ تا ۳۵۵ بایت بیرون از بافر می‌نوشت و داده‌های کناری را خراب می‌کرد</td><td>تخریب حافظه و فریم ناقص روی سرور</td><td class="td-num"><span class="idtag">MAIN-002</span></td></tr>
+          <tr><td class="td-bold">بعد از به‌روزرسانی دستگاه «نو» شده است</td><td>فرمان مهاجرتیِ ارتقا، تنظیمات و شماره‌های مجاز را کارخانه‌ای می‌کرد</td><td>از دست رفتن پیکربندی مشتری در کل ناوگان</td><td class="td-num"><span class="idtag">MAIN-004</span></td></tr>
+          <tr><td class="td-bold">دستگاهِ تنظیم‌شده با IP دیگر وصل نمی‌شود</td><td>حرف اول آدرس سرور («حالت IP») در هر راه‌اندازی بازنویسی و مُد دستگاه گم می‌شد</td><td>آفلاین دائمی، با وجود پاسخ به پیامک</td><td class="td-num"><span class="idtag">MAIN-003</span></td></tr>
+          <tr><td class="td-bold">دستگاه ساعت‌ها به شبکه وصل نمی‌شود</td><td>مهلت‌های چهارثانیه‌ای ماژول را وسط ثبت سیم‌کارت/GPRS ریست می‌کرد؛ هر ریست، تلاش بعدی دیرتر بود</td><td>قطعیِ بیش از ۹۰ دقیقه؛ دستگاه تا ریست عملاً مرده می‌ماند</td><td class="td-num"><span class="idtag">MAIN-007</span> ـ <span class="idtag">MAIN-008</span></td></tr>
+          <tr><td class="td-bold">GPS ساعت‌ها برنمی‌گردد</td><td>خواندن GPS به پالس یک‌ثانیه‌ای گره خورده بود؛ با رفتنِ فیکس، پالس و خواندن هم قطع می‌شد</td><td>خلأ چندساعته در مسیر، با GSM سالم</td><td class="td-num"><span class="idtag">MAIN-010</span></td></tr>
+          <tr><td class="td-bold">زمان رکوردها تکراری است؛ پایان سفر دیر می‌رسد</td><td>مهر زمانی یخ می‌زد و دستگاه پیش از تخلیهٔ صف به خواب می‌رفت</td><td>دادهٔ زمانی نادرست و گزارش دیرهنگام پایان سفر</td><td class="td-num"><span class="idtag">MAIN-012</span> ـ <span class="idtag">MAIN-013</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -212,16 +235,16 @@
     <div>
       <div class="af-eyebrow"><span class="n">۰۲ ـ الف</span> دامنه و روش این بررسی</div>
       <div class="af-facts" style="margin-top:2mm">
-        <div class="f sig"><b>مبنای مقایسه</b><span>کد مبدأ کامل دو نسخه: برنامهٔ اصلی، بوت‌لودر FOTA و ابزار به‌روزرسانی میدانی</span></div>
-        <div class="f"><b>حجم تفاوت</b><span>۲۹۷ بازهٔ تغییر در ۲۸ فایل؛ ۲۸۸ بازه به شناسهٔ تغییر مشخص نگاشته و تحلیل شد</span></div>
-        <div class="f"><b>روش تحلیل</b><span>برای هر تغییر: رفتار قدیم، رفتار جدید، سناریوی دقیقِ فعال‌شدن نقص و بدترین حالت ممکن</span></div>
-        <div class="f"><b>مرز اطمینان</b><span>هرجا نتیجه به فایل نقشهٔ لینکر یا آزمون سخت‌افزاری نیاز داشت و در دسترس نبود، در متن با برچسب «نیازمند راستی‌آزمایی» مشخص شده است</span></div>
+        <div class="f sig"><b>مبنای مقایسه</b><span>کد مبدأ کامل هر دو نسخهٔ برنامهٔ اصلی و بوت‌لودر FOTA</span></div>
+        <div class="f"><b>حجم تفاوت</b><span>۲۹۷ بازهٔ تغییر در ۲۸ فایل؛ ۲۸۸ بازه نگاشته و تحلیل شد</span></div>
+        <div class="f"><b>روش تحلیل</b><span>برای هر تغییر: رفتار قدیم و جدید و سناریوی فعال‌شدن نقص</span></div>
+        <div class="f"><b>مرز اطمینان</b><span>بدون آزمون سخت‌افزاری: برچسب «نیازمند راستی‌آزمایی»</span></div>
       </div>
     </div>
 
     <div class="af-grid-2 af-push">
-      <div class="af-note"><div class="af-note-title"><span class="dot sig"></span>«یخ‌زدگی GSM» یعنی چه؟</div><p>یعنی ماژول ارتباطی (SIM868) زنده است و حتی چراغش کار می‌کند، اما گفت‌وگوی پردازنده با آن در یک مرحله گیر کرده است: یا پاسخ ماژول خوانده نمی‌شود، یا ماژول مدام وسط کار ریست می‌شود. نتیجه برای شما ساده است: دستگاه روی نقشه ثابت می‌ماند، دادهٔ تازه نمی‌رسد و گاهی پیامک هم با تأخیر جواب می‌گیرد ـ بدون اینکه دستگاه «خراب» شده باشد.</p></div>
-      <div class="af-note"><div class="af-note-title"><span class="dot sig"></span>چرا این نقص‌ها روی میز آزمایش دیده نمی‌شدند؟</div><p>بیشترشان به «ورود گرم» وابسته‌اند: وقتی دستگاه با پروگرامر فلش می‌شود، پردازنده از صفر و با مقادیر درست شروع می‌کند. اما در میدان، برنامه از مسیر بوت‌لودر و با میراثِ آن (نشانگر پشته، نشست دادهٔ باز، صفِ پر) وارد می‌شود. به همین دلیل پروگرام‌کردنِ مجدد روی میز، چند نقص اصلی را موقتاً «درمان» و ردیابی‌شان را دشوار می‌کرد.</p></div>
+      <div class="af-note"><div class="af-note-title"><span class="dot sig"></span>«یخ‌زدگی GSM» یعنی چه؟</div><p>یعنی ماژول (SIM868) زنده است، اما پردازنده در گفت‌وگو با آن در یک مرحله گیر کرده است: پاسخ خوانده نمی‌شود یا ماژول وسط کار ریست می‌شود؛ دستگاه روی نقشه ثابت می‌ماند و داده‌ای نمی‌رسد.</p></div>
+      <div class="af-note"><div class="af-note-title"><span class="dot sig"></span>چرا این نقص‌ها روی میز آزمایش دیده نمی‌شدند؟</div><p>بیشترشان به «ورود گرم» وابسته‌اند: روی میز، پردازنده از صفر شروع می‌کند، اما در میدان برنامه با میراثِ بوت‌لودر (Stack Pointer اشتباه، Session باز، صف پر) وارد می‌شود؛ برای همین فلشِ مجدد روی میز آن‌ها را موقتاً «درمان» می‌کرد.</p></div>
     </div>
   </div>
 
@@ -229,7 +252,7 @@
     <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
     <span class="dots3"><i></i><i></i><i></i></span>
     <span>محرمانه ـ ویژهٔ کارفرما</span>
-    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۰۳ / ۱۳</span></span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۰۳ / ۱۴</span></span>
   </footer>
 </section>
 
@@ -245,17 +268,17 @@
     <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
   </header>
 
-  <div class="a4-content" style="gap:4.6mm">
+  <div class="a4-content" style="gap:3.8mm">
     <div>
       <div class="af-eyebrow"><span class="n">۰۳</span> نقص‌های بحرانی ـ ۱ از ۲</div>
       <h2 class="af-h2">دستگاهی که بعد از به‌روزرسانیِ «موفق» دیگر هرگز روشن نمی‌شد</h2>
     </div>
 
-    <p class="af-lead">هر برنامه برای کار به یک «پشته» نیاز دارد: ناحیه‌ای از حافظه که نشانیِ بازگشت و داده‌های موقت در آن نگهداری می‌شود. جای پشته را مقداری به نام نشانگر پشته (<span class="af-ltr">MSP</span>) مشخص می‌کند که باید از جدول بردارهای خودِ برنامه، در نشانی <span class="af-ltr">0x08002000</span> فلش، خوانده شود. در نسخهٔ تحویلی، بوت‌لودر <span class="af-ltr">00.02.05</span> هنگام پرش به برنامه این مقدار را تنظیم نمی‌کرد (<span class="af-ltr">FOTA-001</span>) و خودِ برنامه هم در آغازبه‌کارش آن را اصلاح نمی‌کرد (<span class="af-ltr">MAIN-001</span>). نتیجه: برنامه با پشتهٔ بوت‌لودر ـ در نشانی <span class="af-ltr">0x200030C0</span> ـ شروع می‌کرد.</p>
+    <p class="af-lead">هر برنامهٔ در حال اجرا به Stack نیاز دارد؛ ناحیه‌ای از RAM برای Return Address و داده‌های موقت توابع. محل Stack را رجیستر (<span class="af-ltr">MSP</span>) مشخص می‌کند و مقدار درست آن باید از <span class="af-ltr">Vector Table</span> خودِ برنامه، در نشانی <span class="af-ltr">0x08002000</span> حافظهٔ Flash، خوانده شود. در نسخهٔ تحویلی، بوت‌لودر <span class="af-ltr">00.02.05</span> هنگام پرش به برنامه این مقدار را تنظیم نمی‌کرد (<span class="af-ltr">FOTA-001</span>) و خودِ برنامه هم در <span class="af-ltr">Reset_Handler</span> آن را اصلاح نمی‌کرد (<span class="af-ltr">MAIN-001</span>). نتیجه: برنامه با Stack بوت‌لودر، در نشانی <span class="af-ltr">0x200030C0</span>، شروع به کار می‌کرد.</p>
 
     <figure class="af-diagram">
       <div class="af-figure-head">
-        <div><div class="af-figure-title">تحویل اجرا از بوت‌لودر به برنامه و جای پشته در حافظه</div><div class="af-figure-sub">بالا: مسیر پرش. پایین: نقشهٔ RAM؛ جایی که پشتهٔ به‌ارث‌رسیده می‌نشست، امروز داخل داده‌های برنامه است.</div></div>
+        <div><div class="af-figure-title">تحویل اجرا از بوت‌لودر به برنامه و جایگاه Stack در RAM</div><div class="af-figure-sub">بالا: مسیر پرش. پایین: نقشهٔ RAM؛ جایی که Stack به‌ارث‌رسیده قرار می‌گرفت، امروز داخل داده‌های برنامه است.</div></div>
         <span class="af-figure-fig">شکل ۲</span>
       </div>
       <svg class="af-chart-svg" viewBox="0 0 680 238" role="img" aria-label="تحویل بوت‌لودر به برنامه و نقشهٔ حافظه" style="font-family:'Peyda',Tahoma,sans-serif">
@@ -265,7 +288,7 @@
           <text x="554" y="57" text-anchor="middle" font-size="7.5" font-weight="500" fill="#54748E">پایان به‌روزرسانی: پرش به برنامه (jump)</text>
           <rect x="24" y="18" width="230" height="52" rx="14" fill="#fff" stroke="#C3D9E8"/>
           <text x="139" y="40" text-anchor="middle">برنامهٔ اصلی ـ 0x08002000</text>
-          <text x="139" y="57" text-anchor="middle" font-size="7.5" font-weight="500" fill="#54748E">جدول بردارها: [۰]=MSP و [۴]=Reset_Handler</text>
+          <text x="139" y="57" text-anchor="middle" font-size="7.5" font-weight="500" fill="#54748E">جدول بردارها در ابتدای برنامه</text>
         </g>
         <path d="M452,44 L262,44" stroke="#8DACC4" stroke-width="1.4" fill="none" marker-end="url(#arwFw)"/>
         <text x="357" y="34" text-anchor="middle" font-size="7.5" font-weight="700" fill="#D98E00">قبل: پرش بدون تنظیم MSP</text>
@@ -276,26 +299,26 @@
           <rect x="24" y="104" width="330" height="34" rx="12" fill="#C3D9E8"/>
           <rect x="476" y="104" width="180" height="34" rx="12" fill="#0E9BE8" opacity="0.28"/>
           <text x="180" y="125" text-anchor="middle" font-size="8.5" font-weight="700" fill="#25455F">داده‌های برنامه (.bss/.data) ـ حدود ۱۵٫۴ KB</text>
-          <text x="566" y="125" text-anchor="middle" font-size="8.5" font-weight="700" fill="#0B74C9">پشتهٔ درست برنامه (CSTACK)</text>
+          <text x="566" y="125" text-anchor="middle" font-size="8.5" font-weight="700" fill="#0B74C9">Stack صحیح برنامه (CSTACK)</text>
           <line x1="330" y1="96" x2="330" y2="146" stroke="#FF6659" stroke-width="2.4"/>
           <circle cx="330" cy="96" r="4" fill="#FF6659"/>
-          <text x="330" y="88" text-anchor="middle" font-size="8" font-weight="800" fill="#E05248">0x200030C0 ـ پشتهٔ به‌ارث‌رسیده از بوت‌لودر قدیمی</text>
-          <text x="24" y="160" font-size="7.5" fill="#54748E">مبنای RAM برنامه: 0x200000C0 ـ یعنی فقط ۱۲٬۲۸۸ بایت پایین‌تر از پشتهٔ قدیمی؛ با داده‌های نسخهٔ جدید، هم‌پوشانی قطعی بود، نه اتفاقی.</text>
-          <text x="24" y="182" font-size="8.5" font-weight="700" fill="#102333">پیامد هم‌پوشانی:</text>
-          <text x="24" y="200" font-size="8" fill="#2C4459">۱) پاک‌سازی اولیهٔ حافظه (‎.bss‎) نشانیِ بازگشتِ روی پشته را صفر می‌کرد ← خطای سخت‌افزاری (HardFault) در همان ثانیه‌های اول.</text>
-          <text x="24" y="217" font-size="8" fill="#2C4459">۲) اگر آن کلمهٔ خاص جان سالم به در می‌برد، دستگاه با داده‌های خرابِ پنهان کار می‌کرد؛ خرابی‌ای که هر بار چهره‌اش عوض می‌شد.</text>
+          <text x="330" y="88" text-anchor="middle" font-size="8" font-weight="800" fill="#E05248">0x200030C0 ـ Stack به‌ارث‌رسیده از بوت‌لودر قدیمی</text>
+          <text x="340" y="160" text-anchor="middle" font-size="7.5" fill="#54748E">مبنای RAM برنامه 0x200000C0 است؛ فقط ۱۲٬۲۸۸ بایت پایین‌تر از Stack قدیمی ـ هم‌پوشانی قطعی بود، نه اتفاقی</text>
+          <text x="340" y="184" text-anchor="middle" font-size="8.5" font-weight="700" fill="#102333">پیامد هم‌پوشانی</text>
+          <text x="340" y="202" text-anchor="middle" font-size="8" fill="#2C4459">۱) پاک‌سازی (‎.bss‎) Return Address روی Stack را صفر می‌کرد ← HardFault در ثانیه‌های اول</text>
+          <text x="340" y="219" text-anchor="middle" font-size="8" fill="#2C4459">۲) در غیر این صورت دستگاه با دادهٔ خرابِ پنهان کار می‌کرد؛ خرابی‌ای که هر بار چهره‌اش عوض می‌شد</text>
         </g>
       </svg>
       <figcaption class="af-figure-foot"><span>نشانی‌ها و اندازه‌ها از کد مبدأ و جدول بردارهای دو نسخه استخراج شده‌اند</span><span class="af-ltr">MSP 0x200030C0 / RAM base 0x200000C0</span></figcaption>
     </figure>
 
-    <div class="af-table-wrap">
-      <div class="af-h3" style="padding:3mm 3.5mm 0">رفتار ورود به برنامه ـ قبل و بعد</div>
+    <div class="af-table-wrap tight">
+      <div class="af-h3" style="padding:2mm 3.5mm 0">رفتار ورود به برنامه ـ قبل و بعد</div>
       <table class="af-table">
         <thead><tr><th style="width:24%">گام</th><th style="width:38%">نسخهٔ تحویلی (B1.05.20 + FOTA 00.02.05)</th><th style="width:38%">نسخهٔ نهایی (B1.06.60 + FOTA 00.02.06)</th></tr></thead>
         <tbody>
           <tr><td class="td-bold">پرش بوت‌لودر</td><td>فقط نشانی شروع برنامه خوانده می‌شد؛ خطِ خواندن MSP حتی در کد بود اما کامنت شده بود</td><td>بوت‌لودر MSP را از <span class="af-ltr">0x08002000</span> می‌خواند و با دستور <span class="af-ltr">MSR MSP, R0</span> پیش از پرش تنظیم می‌کند (<span class="idtag">FOTA-001</span>)</td></tr>
-          <tr><td class="td-bold">آغاز برنامه</td><td><span class="af-ltr">Reset_Handler</span> مستقیم سراغ راه‌اندازی سیستم می‌رفت؛ با هر پشته‌ای که به ارث رسیده بود</td><td>برنامه در اولین دستورها MSP را از جدول بردارهای خودش بازخوانی می‌کند؛ مستقل از اینکه کدام بوت‌لودر آن را صدا زده است (<span class="idtag">MAIN-001</span>)</td></tr>
+          <tr><td class="td-bold">آغاز برنامه</td><td><span class="af-ltr">Reset_Handler</span> مستقیم سراغ راه‌اندازی سیستم می‌رفت؛ بدون اصلاح MSP به‌ارث‌رسیده از بوت‌لودر</td><td>برنامه در اولین دستورها MSP را از جدول بردارهای خودش بازخوانی می‌کند؛ مستقل از اینکه کدام بوت‌لودر آن را صدا زده است (<span class="idtag">MAIN-001</span>)</td></tr>
           <tr><td class="td-bold">دستگاهِ میدانی با بوت‌لودر قدیمی</td><td>با هر به‌روزرسانیِ برنامه در معرض خاموشی کامل بود</td><td>حتی پیش از ارتقای بوت‌لودر، خودِ برنامه از خودش محافظت می‌کند؛ ارتقای بوت‌لودر لایهٔ دوم اطمینان است</td></tr>
         </tbody>
       </table>
@@ -303,7 +326,7 @@
 
     <div class="af-note af-push">
       <div class="af-note-title"><span class="dot bad"></span>چرا این نقص «بحرانی» است؟</div>
-      <p>چون مسیر فعال‌شدنش دقیقاً مسیر عادیِ نگهداری ناوگان بود: کافی بود روی دستگاهی با بوت‌لودر قدیمی، یک به‌روزرسانی معمولی انجام شود. دستگاه پیام موفقیت می‌داد، ریست می‌شد و دیگر هرگز در شبکه دیده نمی‌شد ـ نه چراغی، نه پاسخ پیامکی. تنها راه بازگرداندنش اتصال فیزیکی پروگرامر بود. اصلاح دوطرفه (هم در بوت‌لودر، هم در برنامه) باعث می‌شود هیچ ترکیبی از نسخه‌های قدیم و جدید، دستگاه را در این تله نیندازد. کنترل میدانیِ آن هم ساده است: دستگاهِ به‌روزشده باید پس از ارتقا به پرس‌وجوی نسخه (<span class="af-ltr">#GETVER</span>) پاسخ دهد و ارسال رکورد را از سر بگیرد.</p>
+      <p>چون مسیر فعال‌شدنش دقیقاً مسیر عادیِ نگهداری ناوگان بود: کافی بود روی دستگاهی با بوت‌لودر قدیمی یک به‌روزرسانی معمولی انجام شود. دستگاه پیام موفقیت می‌داد، ریست می‌شد و دیگر هرگز در شبکه دیده نمی‌شد؛ تنها راه بازگرداندنش اتصال فیزیکی پروگرامر بود. اصلاح دوطرفه (هم در بوت‌لودر، هم در برنامه) هیچ ترکیبی از نسخه‌های قدیم و جدید را در این تله نمی‌اندازد و کنترلش ساده است: دستگاهِ به‌روزشده باید به پرس‌وجوی نسخه (<span class="af-ltr">#GETVER</span>) پاسخ دهد و ارسال رکورد را از سر بگیرد.</p>
     </div>
   </div>
 
@@ -311,7 +334,7 @@
     <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
     <span class="dots3"><i></i><i></i><i></i></span>
     <span>محرمانه ـ ویژهٔ کارفرما</span>
-    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۰۴ / ۱۳</span></span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۰۴ / ۱۴</span></span>
   </footer>
 </section>
 
@@ -327,48 +350,48 @@
     <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
   </header>
 
-  <div class="a4-content" style="gap:4.6mm">
+  <div class="a4-content" style="gap:2.2mm">
     <div>
       <div class="af-eyebrow"><span class="n">۰۴</span> نقص‌های بحرانی ـ ۲ از ۲</div>
       <h2 class="af-h2">تخریب حافظه هنگام ارسال، و تنظیماتی که با یک ارتقا پاک می‌شد</h2>
     </div>
 
-    <p class="af-lead">سه نقص بعدی یک خصلت مشترک دارند: در سکوت عمل می‌کنند. دستگاه یا داده‌ای را خراب می‌کند که قرار بود بفرستد (<span class="af-ltr">MAIN-002</span>)، یا پیکربندی‌ای را از بین می‌برد که مشتری روی آن حساب کرده است (<span class="af-ltr">MAIN-004</span> و <span class="af-ltr">MAIN-003</span>)، یا وضعیت «ارسال شد» رکوردها را در جای اشتباه می‌نویسد (<span class="af-ltr">MAIN-005</span>). هیچ‌کدام چراغ خطا روشن نمی‌کنند؛ اثرشان را باید روی سرور و در رفتار ناوگان دید.</p>
+    <p class="af-lead">این نقص‌ها در سکوت عمل می‌کنند: دستگاه داده‌ای را خراب می‌کند که قرار بود بفرستد (<span class="af-ltr">MAIN-002</span>)، یا پیکربندی‌ای را از بین می‌برد که مشتری روی آن حساب کرده است (<span class="af-ltr">MAIN-004</span> و <span class="af-ltr">MAIN-003</span>)، یا وضعیت «ارسال شد» رکوردها را جای اشتباه می‌نویسد (<span class="af-ltr">MAIN-005</span>).</p>
 
-    <div class="af-table-wrap">
-      <div class="af-h3" style="padding:3mm 3.5mm 0">نقص اول ـ سرریز بافر در ساخت بستهٔ داده (<span class="idtag">MAIN-002</span>)</div>
+    <div class="af-table-wrap tight">
+      <div class="af-h3" style="padding:2mm 3.5mm 0">نقص اول ـ سرریز بافر در ساخت بستهٔ داده (<span class="idtag">MAIN-002</span>)</div>
       <table class="af-table">
-        <thead><tr><th style="width:30%">پارامتر</th><th style="width:22%">قبل</th><th style="width:22%">بعد</th><th style="width:26%">معنای عملی</th></tr></thead>
+        <thead><tr><th style="width:27%">پارامتر</th><th style="width:20%">قبل</th><th style="width:25%">بعد</th><th style="width:28%">معنای عملی</th></tr></thead>
         <tbody>
-          <tr><td class="td-bold">حداکثر رکورد در هر بستهٔ ارسالی</td><td class="td-num">۱۵ رکورد</td><td class="td-num">۱۴ رکورد (با جعبه‌سیاه: ۱۲)</td><td>بسته دیگر از ظرفیت بافر بزرگ‌تر ساخته نمی‌شود</td></tr>
-          <tr><td class="td-bold">اندازهٔ بافر بسته (<span class="af-ltr">eventsContent[]</span>)</td><td class="td-num">۱٬۴۱۵ بایت</td><td class="td-num">۱٬۴۶۰ بایت</td><td>با بدترین ترکیب رویداد و دما هم جا کافی است</td></tr>
-          <tr><td class="td-bold">سقف طول روی سیم (<span class="af-ltr">AT+CIPSEND</span>)</td><td class="td-num">بدون سقف مشخص</td><td class="td-num"><span class="af-ltr">SERVER_PACKET_WIRE_LIMIT = 1460</span></td><td>طولی که ماژول قبول نمی‌کند، دیگر اصلاً ساخته نمی‌شود</td></tr>
-          <tr><td class="td-bold">پیامد نقص در میدان</td><td colspan="2">نوشتن ۵۵ تا ۳۵۵ بایت بیرون از بافر؛ گاهی روی شمارندهٔ حلقه می‌نشست و نوشتنِ چندکیلوبایتی و ریست می‌ساخت، گاهی فریم Codec8 را روی سرور ناقص می‌کرد</td><td>صف پر (بعد از هر دورهٔ آفلاین) محرک مستقیم نقص بود</td></tr>
+          <tr><td class="td-bold">حداکثر رکورد در هر بستهٔ ارسالی</td><td class="td-num">۱۵ رکورد</td><td class="td-num">۱۴ رکورد (با جعبه‌سیاه: ۱۲)</td><td>بسته از ظرفیت بافر بزرگ‌تر ساخته نمی‌شود</td></tr>
+          <tr><td class="td-bold">اندازهٔ بافر بسته (<span class="af-ltr">eventsContent[]</span>)</td><td class="td-num">۱٬۴۱۵ بایت</td><td class="td-num">۱٬۴۶۰ بایت</td><td>با بدترین ترکیب رویداد و دما هم کافی است</td></tr>
+          <tr><td class="td-bold">سقف طول بسته (<span class="af-ltr">AT+CIPSEND</span>)</td><td class="td-num">بدون سقف مشخص</td><td class="td-num"><span class="af-ltr">SERVER_PACKET_WIRE_LIMIT = 1460</span></td><td>طولی که ماژول قبول نمی‌کند، ساخته نمی‌شود</td></tr>
+          <tr><td class="td-bold">پیامد نقص در میدان</td><td colspan="2">نوشتن ۵۵ تا ۳۵۵ بایت بیرون از بافر؛ گاهی شمارندهٔ حلقه و ریستِ چندکیلوبایتی، گاهی فریم ناقص Codec8 روی سرور</td><td>صف پر (بعد از هر دورهٔ آفلاین) محرک مستقیم نقص بود</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="af-table-wrap">
-      <div class="af-h3" style="padding:3mm 3.5mm 0">نقص دوم و سوم ـ تنظیماتی که نباید پاک می‌شد (<span class="idtag">MAIN-004</span> ـ <span class="idtag">MAIN-003</span>)</div>
+    <div class="af-table-wrap tight">
+      <div class="af-h3" style="padding:2mm 3.5mm 0">نقص دوم و سوم ـ تنظیماتی که نباید پاک می‌شد (<span class="idtag">MAIN-004</span> ـ <span class="idtag">MAIN-003</span>)</div>
       <table class="af-table">
         <thead><tr><th style="width:26%">سازوکار</th><th style="width:37%">در نسخهٔ تحویلی چه می‌شد؟</th><th style="width:37%">در نسخهٔ نهایی</th></tr></thead>
         <tbody>
-          <tr><td class="td-bold">فرمان مهاجرت هنگام ارتقا</td><td>اولین فرمانِ فهرست مهاجرت «بازگردانی تنظیمات و شماره‌های مجاز به کارخانه» بود؛ هر ارتقا از نسخهٔ قبلی آن را یک بار اجرا می‌کرد</td><td>آن خانه به «بدون عملیات» (<span class="af-ltr">TC_NOP</span>) تبدیل شد؛ ارتقا دیگر هیچ پیکربندی‌ای را پاک نمی‌کند</td></tr>
-          <tr><td class="td-bold">ترتیب ثبت انجام کار</td><td>نشانگر «انجام شد» بعد از اجرای فرمان‌ها نوشته می‌شد؛ ریستِ واچ‌داگ وسط کار (مثلاً پاک‌کردن رکوردها) یعنی اجرای دوباره در هر بوت، تا ابد</td><td>نشانگر پیش از اجرا ثبت می‌شود؛ هر مهاجرت حداکثر یک بار، حتی اگر وسطش برق برود</td></tr>
-          <tr><td class="td-bold">اعتبار دادهٔ ذخیره‌شده</td><td>اگر سکتور تنظیمات در یک بوت خوانا نبود، دستگاه با دادهٔ سالم هم مثل «دستگاه نو» رفتار و تنظیمات را بازنویسی می‌کرد</td><td>مهر اعتبار (metadata) هنگام نوشتن توسط خودِ نویسنده زده می‌شود؛ ردّ سکتور فقط برای دلیل واقعی اتفاق می‌افتد</td></tr>
-          <tr><td class="td-bold">حالت آدرس سرور (<span class="idtag">MAIN-003</span>)</td><td>کاراکتر اول آدرس که می‌گوید «آدرس، IP است یا نام دامنه» در هر بوت با آدرس پیش‌فرض بازنویسی و مُد دستگاه گم می‌شد</td><td>اعتبارسنجی به آن کاراکتر دست نمی‌زند و مسیر ترمیم هم همان مُد را حفظ می‌کند؛ دستگاهِ IP-محور دیگر از وصل‌شدن نمی‌افتد</td></tr>
+          <tr><td class="td-bold">فرمان مهاجرت هنگام ارتقا</td><td>اولین فرمان مهاجرتِ «بازگردانی تنظیمات و شماره‌های مجاز به کارخانه» بود و با هر ارتقا اجرا می‌شد</td><td>آن خانه «بدون عملیات» (<span class="af-ltr">TC_NOP</span>) شد؛ ارتقا دیگر هیچ پیکربندی‌ای را پاک نمی‌کند</td></tr>
+          <tr><td class="td-bold">ترتیب ثبت انجام کار</td><td>پرچم «انجام شد» بعد از اجرا نوشته می‌شد؛ ریستِ واچ‌داگ وسط کار (مثلاً پاک‌کردن رکوردها) یعنی اجرای دوباره در هر بوت، تا ابد</td><td>پرچم پیش از اجرا ثبت می‌شود؛ هر مهاجرت حداکثر یک بار اجرا می‌شود</td></tr>
+          <tr><td class="td-bold">اعتبار دادهٔ ذخیره‌شده</td><td>سکتور تنظیماتی که در یک بوت خوانا نبود، حتی با دادهٔ سالم «نو» فرض و بازنویسی می‌شد</td><td>مهر اعتبار (metadata) را خودِ نویسنده می‌زند؛ ردّ سکتور فقط برای دلیل واقعی است</td></tr>
+          <tr><td class="td-bold">حالت آدرس سرور (<span class="idtag">MAIN-003</span>)</td><td>کاراکتر اول آدرس («IP یا دامنه») در هر بوت بازنویسی و مُد دستگاه گم می‌شد</td><td>اعتبارسنجی و ترمیم، آن کاراکتر را حفظ می‌کنند؛ دستگاهِ IP-محور دیگر از وصل‌شدن نمی‌افتد</td></tr>
         </tbody>
       </table>
     </div>
 
     <div>
       <div class="af-eyebrow"><span class="n">۰۴ ـ الف</span> نقص چهارم ـ نشانی اشتباهِ وضعیت ارسال رکوردها (<span class="idtag">MAIN-005</span>)</div>
-      <p class="af-small" style="font-size:8.2pt;color:var(--af-text);line-height:1.85;text-align:justify">وقتی ثبت رویداد (logging) فعال بود، علامت «این رکورد ارسال شد» در حافظهٔ خارجی W25Q با یک مبنای نشانیِ تعریف‌نشده/اشتباه نوشته می‌شد؛ عملاً پرچم در جایی می‌نشست که خواننده دنبالش نمی‌گشت. نتیجه‌اش روی سرور دیده می‌شد: یا همان رکورد بارها تکرار می‌شد، یا جاهای خالیِ دائمی در مسیر. مبنا به نشانی واقعیِ ناحیهٔ رکوردها (<span class="af-ltr">recordsArea.w25qRecordFirstSectorAddr</span>) اصلاح شد. این نقص روی دستگاه‌هایی که logging ندارند هرگز دیده نمی‌شد ـ نمونهٔ خوبی از خطایی که فقط در یک پیکربندی خاص زنده است.</p>
+      <p class="af-small" style="font-size:8.2pt;color:var(--af-text);line-height:1.85;text-align:justify">وقتی ثبت رویداد (logging) فعال بود، علامت «این رکورد ارسال شد» در حافظهٔ W25Q با مبنای نشانیِ اشتباه نوشته می‌شد. نتیجه روی سرور دیده می‌شد: رکوردهای تکراری یا جاهای خالیِ دائمی در مسیر. مبنا به نشانی واقعیِ ناحیهٔ رکوردها (<span class="af-ltr">recordsArea.w25qRecordFirstSectorAddr</span>) اصلاح شد؛ روی دستگاه‌های بدون logging هرگز دیده نمی‌شد.</p>
     </div>
 
     <div class="af-note af-push">
       <div class="af-note-title"><span class="dot bad"></span>وجه مشترک این چهار نقص</div>
-      <p>هر چهار مورد «خرابیِ خاموش»‌اند: دستگاه از کار نمی‌ایستد که کسی متوجه شود؛ یا دادهٔ فاسد می‌فرستد، یا پیکربندی از دست می‌دهد، یا رکورد تکراری/گمشده تولید می‌کند. به همین دلیل در چک‌لیست بهره‌برداری (صفحهٔ ۱۱) برایشان راستی‌آزمایی مشخص تعریف شده است: مقایسهٔ تنظیمات پیش و پس از ارتقا با پرس‌وجوهای <span class="af-ltr">#GET:110</span> تا <span class="af-ltr">#GET:113</span> و کنترل نبودِ فریم ناقص در خروجی سرور.</p>
+      <p>هر چهار مورد «خرابیِ خاموش»‌اند: دستگاه از کار نمی‌ایستد تا کسی متوجه شود؛ یا دادهٔ فاسد می‌فرستد، یا پیکربندی از دست می‌دهد، یا رکورد تکراری/گمشده می‌سازد. برای همین در چک‌لیست بهره‌برداری (صفحهٔ ۱۱) برایشان راستی‌آزمایی مشخص تعریف شده است: مقایسهٔ تنظیمات پیش و پس از ارتقا با پرس‌وجوهای <span class="af-ltr">#GET:110</span> تا <span class="af-ltr">#GET:113</span> و کنترل فریم‌های ناقص روی سرور.</p>
     </div>
   </div>
 
@@ -376,7 +399,591 @@
     <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
     <span class="dots3"><i></i><i></i><i></i></span>
     <span>محرمانه ـ ویژهٔ کارفرما</span>
-    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۰۵ / ۱۳</span></span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۰۵ / ۱۴</span></span>
+  </footer>
+</section>
+
+<!-- ══════════ صفحهٔ ۶ — زنجیرهٔ به‌روزرسانی دومرحله‌ای ══════════ -->
+<section class="a4-page">
+  <header class="a4-header">
+    <div class="a4-header-brand">
+      <img src="svg/logo%20ati%20farzam.svg" alt="" class="a4-header-logo" />
+      <img src="svg/typography%20ati%20farzam.svg" alt="آتی فرزام" class="a4-header-typo" />
+      <span class="a4-header-divider"></span>
+      <div><div class="a4-header-title">گزارش بازبینی و ارتقای فریم‌ور دستگاه ردیاب</div><div class="a4-header-subtitle">آتی فرزام ـ مهندسی فریم‌ور و سخت‌افزار ردیاب</div></div>
+    </div>
+    <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
+  </header>
+
+  <div class="a4-content" style="gap:3mm">
+    <div>
+      <div class="af-eyebrow"><span class="n">۰۵</span> به‌روزرسانی و پایداری ـ زنجیرهٔ به‌روزرسانی</div>
+      <h2 class="af-h2">تعویض بوت‌لودر از راه دور، بدون باز کردن دستگاه</h2>
+    </div>
+
+    <p class="af-lead">بوت‌لودر قدیمی خودش یکی از نقص‌های بحرانی را داشت (صفحهٔ ۴)، اما هیچ بوت‌لودری نمی‌تواند خودش را به‌روز کند. راه‌حل، یک برنامهٔ موقت به نام «فلشر» است (<span class="af-ltr">FLASH-001</span>): یک بار با به‌روزرسانی عادی روی دستگاه می‌نشیند، بوت‌لودر را سرِ جای خودش بازنویسی می‌کند و کنار می‌رود تا بوت‌لودر تازه‌نفس، برنامهٔ اصلی را بگیرد؛ بدون این حلقه، اصلاح بوت‌لودر هرگز به میدان نمی‌رسید.</p>
+
+    <figure class="af-diagram">
+      <div class="af-figure-head">
+        <div><div class="af-figure-title">زنجیرهٔ به‌روزرسانی دومرحله‌ای بوت‌لودر</div><div class="af-figure-sub">مرحلهٔ اول یک‌باره و برگشت‌ناپذیر است؛ مرحلهٔ دوم را بوت‌لودر جدید خودکار انجام می‌دهد.</div></div>
+        <span class="af-figure-fig">شکل ۳</span>
+      </div>
+      <svg class="af-chart-svg" viewBox="0 0 680 124" role="img" aria-label="زنجیرهٔ به‌روزرسانی دومرحله‌ای بوت‌لودر" style="font-family:'Peyda',Tahoma,sans-serif">
+        <defs><marker id="arw6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#54748E"/></marker></defs>
+        <rect x="534" y="14" width="146" height="60" rx="13" fill="#fff" stroke="#C3D9E8" stroke-width="1.4"/>
+        <text x="607" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#102333">دستور به‌روزرسانی</text>
+        <text x="607" y="59" text-anchor="middle" font-size="7.5" font-weight="700" fill="#0B74C9">#COM:913</text>
+        <rect x="356" y="14" width="146" height="60" rx="13" fill="#EFF7FC" stroke="#0E9BE8" stroke-width="1.4"/>
+        <text x="429" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#102333">کنترل پیش از نوشتن</text>
+        <text x="429" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">تطبیق بایت‌به‌بایت تصویر</text>
+        <rect x="178" y="14" width="146" height="60" rx="13" fill="#EFF7FC" stroke="#102333" stroke-width="1.4"/>
+        <text x="251" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#102333">بازنویسی بوت‌لودر</text>
+        <text x="251" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">صفحات ۰ تا ۳ Flash</text>
+        <rect x="0" y="14" width="146" height="60" rx="13" fill="#0E9BE8" fill-opacity="0.14" stroke="#0B74C9" stroke-width="1.4"/>
+        <text x="73" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#0B74C9">مرحلهٔ دوم خودکار</text>
+        <text x="73" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">تکمیل به‌روزرسانی</text>
+        <line x1="532" y1="44" x2="509" y2="44" stroke="#8DACC4" stroke-width="1.6" marker-end="url(#arw6)"/>
+        <line x1="354" y1="44" x2="331" y2="44" stroke="#8DACC4" stroke-width="1.6" marker-end="url(#arw6)"/>
+        <line x1="176" y1="44" x2="153" y2="44" stroke="#8DACC4" stroke-width="1.6" marker-end="url(#arw6)"/>
+        <text x="520" y="33" text-anchor="middle" font-size="7.5" font-weight="700" fill="#54748E">اجرا</text>
+        <text x="342" y="33" text-anchor="middle" font-size="7.5" font-weight="700" fill="#54748E">تطابق</text>
+        <text x="164" y="33" text-anchor="middle" font-size="7.5" font-weight="700" fill="#54748E">Reset</text>
+        <text x="607" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">فرمان پیامکی اپراتور</text>
+        <text x="607" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">دریافت ابزار از FTP</text>
+        <text x="429" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">اجرا در نشانی برنامه</text>
+        <text x="429" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">مقایسهٔ تصویر با مرجع</text>
+        <text x="251" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">نوشتن نسخهٔ تازه</text>
+        <text x="251" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">ثبت حالت به‌روزرسانی و ریست</text>
+        <text x="73" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">دریافت برنامهٔ اصلی از FTP</text>
+        <text x="73" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">پرش با Stack Pointer درست</text>
+      </svg>
+      <figcaption class="af-figure-foot"><span>خودِ نوشتن حدود یک ثانیه طول می‌کشد؛ بقیهٔ زمان، دانلود از FTP است</span><span class="af-ltr">resetCause = 0x4C</span></figcaption>
+    </figure>
+
+    <div class="af-facts" style="margin-top:1mm">
+      <div class="f sig"><b>ابزار فلشر</b><span><span class="af-ltr">FLASHER_913</span> ـ ۱۰٬۱۹۰ بایت، در نشانی خودِ برنامه</span></div>
+      <div class="f"><b>تصویر بوت‌لودر</b><span>۷٬۴۸۰ بایت؛ در ۷٬۴۷۵ بایت با فایل مرجع (RG_FOTA.bin) یکسان، با ۵ بایت 0xFF</span></div>
+      <div class="f"><b>ناحیهٔ بازنویسی</b><span>صفحات ۰ تا ۳ Flash؛ چهار صفحهٔ ۲٬۰۴۸ بایتی</span></div>
+      <div class="f"><b>دو بار تطبیق</b><span>تصویر پیش از نوشتن و پیش از ریست مقایسه می‌شود</span></div>
+    </div>
+
+    <div class="af-table-wrap tight">
+      <div class="af-h3" style="padding:2mm 3.5mm 0">رفتار قابل مشاهدهٔ دستگاه در هر وضعیت این زنجیره</div>
+      <table class="af-table">
+        <thead><tr><th style="width:20%">وضعیت</th><th style="width:24%">آنچه دیده می‌شود</th><th style="width:38%">معنایش</th><th style="width:18%">اقدام لازم</th></tr></thead>
+        <tbody>
+          <tr><td class="td-bold">موفقیت مرحلهٔ اول</td><td>۱۰ پالس LED، بعد بوت عادی</td><td>بوت‌لودر عوض شده و مرحلهٔ دوم در راه است</td><td>هیچ</td></tr>
+          <tr><td class="td-bold">خطا در مرحلهٔ اول</td><td>۱۶ پالس سریع LED</td><td>نوشتن در W25Q ناموفق بوده؛ بوت‌لودر قدیمی سالم است و دستگاه بعداً دوباره تلاش می‌کند</td><td>هیچ؛ در صورت تکرار، بررسی W25Q</td></tr>
+          <tr><td class="td-bold">بوت‌لودر نیمه‌نوشته</td><td>حلقهٔ دائمی ۴ پالس LED</td><td>برق وسط بازنویسی رفته است؛ دستگاه دیگر بالا نمی‌آید</td><td>فقط پروگرامر؛ پیشگیری: برق پایدار هنگام ارتقا</td></tr>
+          <tr><td class="td-bold">خطای FTP در مرحلهٔ دوم</td><td>دستگاه در بوت‌لودر می‌ماند؛ نه داده می‌آید، نه پیامک</td><td>طراحیِ عمدی است تا برنامهٔ ناقص اجرا نشود؛ با درست‌شدن FTP کامل می‌شود</td><td>بررسی پوشش شبکه و اعتبار FTP</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="af-note af-push">
+      <div class="af-note-title"><span class="dot warn"></span>این زنجیره فقط به‌صورت یک بسته معنا دارد</div>
+      <p>فلشر بدون اصلاح «آزادسازی نشست داده پیش از ریست» (<span class="af-ltr">MAIN-011</span>، صفحهٔ ۷) در مرحلهٔ دوم گیر می‌کند و اصلاح بوت‌لودر هم بدون فلشر به دستگاه‌های میدانی نمی‌رسد؛ این تغییرات نباید جدا از هم اعمال شوند (وابستگی‌ها: صفحهٔ ۱۱) و سه تغییر همراهِ بوت‌لودر (<span class="af-ltr">FOTA-002</span> تا <span class="af-ltr">FOTA-004</span>) در صفحهٔ ۱۰ آمده است. برای سقف حجم فلشر، ۲۴ فایل درایور بلااستفاده تهی و درایور W25Q حداقلی شد (<span class="af-ltr">FLASH-002</span>)؛ بی‌اثر بر رفتار دستگاه، اما ساخت فلشر باید دقیقاً همین باشد.</p>
+    </div>
+  </div>
+
+  <footer class="a4-footer">
+    <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
+    <span class="dots3"><i></i><i></i><i></i></span>
+    <span>محرمانه ـ ویژهٔ کارفرما</span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۰۶ / ۱۴</span></span>
+  </footer>
+</section>
+
+<!-- ══════════ صفحهٔ ۷ — پایداری GSM ══════════ -->
+<section class="a4-page">
+  <header class="a4-header">
+    <div class="a4-header-brand">
+      <img src="svg/logo%20ati%20farzam.svg" alt="" class="a4-header-logo" />
+      <img src="svg/typography%20ati%20farzam.svg" alt="آتی فرزام" class="a4-header-typo" />
+      <span class="a4-header-divider"></span>
+      <div><div class="a4-header-title">گزارش بازبینی و ارتقای فریم‌ور دستگاه ردیاب</div><div class="a4-header-subtitle">آتی فرزام ـ مهندسی فریم‌ور و سخت‌افزار ردیاب</div></div>
+    </div>
+    <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
+  </header>
+
+  <div class="a4-content" style="gap:3.2mm">
+    <div>
+      <div class="af-eyebrow"><span class="n">۰۶</span> به‌روزرسانی و پایداری ـ ارتباط GSM</div>
+      <h2 class="af-h2">دستگاهی که ساعت‌ها از شبکه می‌افتاد، چطور سرِ پا ماند</h2>
+    </div>
+
+    <p class="af-lead">بیشتر قطعی‌های چندساعته از خودِ شبکه نبود؛ فریم‌ور قدیم سه عجله داشت: سیم‌کارتِ کند را وسط ثبت‌شدن ریست می‌کرد، برای عملیات کندِ شبکه فقط چند ثانیه صبر می‌کرد و وقتی حلقهٔ دریافت ماژول اشباع می‌شد، برای همیشه کر می‌ماند ـ دستگاهی که فقط با قطع برق برمی‌گشت. چهار اصلاح زیر همین سه ریشه را نشانه گرفته‌اند.</p>
+
+    <div class="af-table-wrap tight">
+      <div class="af-h3" style="padding:2mm 3.5mm 0">چهار اصلاح پایداری ارتباط GSM</div>
+      <table class="af-table">
+        <thead><tr><th style="width:13%">شناسه</th><th style="width:29%">ریشهٔ مشکل در نسخهٔ تحویلی</th><th style="width:33%">اصلاح</th><th style="width:25%">عدد کلیدی</th></tr></thead>
+        <tbody>
+          <tr><td class="td-num"><span class="idtag">MAIN-007</span></td><td>روشن و خاموش‌کردن ماژول، کل سیستم را نگه می‌داشت و درخواست خاموشی «جا می‌ماند» تا دور بعدی بی‌دلیل اجرا شود</td><td>ماشین حالت هفت‌مرحله‌ایِ غیرمسدودکننده برای توالی برق ماژول؛ مصرف‌شدن درخواست خاموشی همان لحظه ثبت می‌شود</td><td>پالس <span class="af-ltr">PWRKEY</span>‏: ۱٬۸۰۰ میلی‌ثانیه؛ مکث خاموشی: ۳٬۵۰۰؛ قطع برق پس از ۳ دور ناموفق</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-008</span></td><td>سیم‌کارتی که دیر از حالت «مشغول» بیرون می‌آمد، با سه خطای پیاپی در ۱٫۵ ثانیه ماژول را به ریست می‌انداخت و هر ریست، چرخه را از نو می‌ساخت؛ attach کند هم وسط کار قطع می‌شد</td><td>بودجهٔ صبر واقع‌بینانه برای عملیات و خطاهای شبکه، به‌جای ریست در اولین تأخیر؛ پاسخ «هنوز ثبت نشده» هم فرصت کافی دارد</td><td>مهلت عملیات شبکه از حدود ۴ به ۶۰ ثانیه (<span class="af-ltr">GSM_TIMEOUT_60</span>)؛ سیم‌کارت ۶ تلاش؛ خطای <span class="af-ltr">CME</span> تا ۸ دور؛ ثبت شبکه تا ۶ دور</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-009</span></td><td>اشباع حلقهٔ دریافت، پردازنده را برای همیشه از شنیدن ماژول محروم می‌کرد: دستگاه «آنلاین ولی کر» می‌شد و فقط با قطع برق برمی‌گشت</td><td>شمارندهٔ اتمیک حلقهٔ دریافت، خالی‌کردن امن حلقه و بازسازی UART، و نگهبان (Guardian) دوطبقه برای سکوتِ درمان‌ناپذیر</td><td>ریست کنترل‌شده پس از ۳۰ تا ۶۰ دقیقه سکوتِ کامل ارتباط</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-011</span></td><td>نشست دادهٔ بازمانده از برنامه، بوت‌لودر را هنگام به‌روزرسانی گیر می‌انداخت و هر به‌روزرسانی از راه دور با یک خطای کلی تمام می‌شد</td><td>بستن نشست داده پیش از ریست‌های فرمانی (<span class="af-ltr">#COM:913/914/910</span>) و ریست نگهبان، تا بوت‌لودر با خطِ آزاد شروع کند</td><td><span class="af-ltr">AT+CIPSHUT</span> و بستن Bearer؛ حداکثر ۲۰ ثانیه برای هرکدام</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <figure class="af-diagram">
+      <div class="af-figure-head">
+        <div><div class="af-figure-title">بازیابی پلکانی ارتباط GSM</div><div class="af-figure-sub">هر سطح فقط وقتی فعال می‌شود که سطح قبلی جواب نداده باشد؛ هدف این است که هیچ دستگاهی بی‌صدا و برای همیشه از دسترس خارج نماند.</div></div>
+        <span class="af-figure-fig">شکل ۴</span>
+      </div>
+      <svg class="af-chart-svg" viewBox="0 0 680 124" role="img" aria-label="بازیابی پلکانی ارتباط GSM" style="font-family:'Peyda',Tahoma,sans-serif">
+        <defs><marker id="arw7" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#54748E"/></marker></defs>
+        <rect x="534" y="14" width="146" height="60" rx="13" fill="#FDF3F1" stroke="#FF6659" stroke-width="1.4"/>
+        <text x="607" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#102333">گیرکردن ارتباط</text>
+        <text x="607" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">سکوت ماژول و اشباع حلقه</text>
+        <rect x="356" y="14" width="146" height="60" rx="13" fill="#EFF7FC" stroke="#0E9BE8" stroke-width="1.4"/>
+        <text x="429" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#102333">بازسازی UART</text>
+        <text x="429" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">سطح ۱ ـ بازیابی نرم</text>
+        <rect x="178" y="14" width="146" height="60" rx="13" fill="#EFF7FC" stroke="#0E9BE8" stroke-width="1.4"/>
+        <text x="251" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#102333">چرخهٔ برق ماژول</text>
+        <text x="251" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">سطح ۲ ـ بازیابی سخت</text>
+        <rect x="0" y="14" width="146" height="60" rx="13" fill="#0BBFA5" fill-opacity="0.13" stroke="#0BBFA5" stroke-width="1.4"/>
+        <text x="73" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#0A8A76">ریست کنترل‌شده</text>
+        <text x="73" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">نگهبان (Guardian)</text>
+        <line x1="532" y1="44" x2="509" y2="44" stroke="#8DACC4" stroke-width="1.6" marker-end="url(#arw7)"/>
+        <line x1="354" y1="44" x2="331" y2="44" stroke="#8DACC4" stroke-width="1.6" marker-end="url(#arw7)"/>
+        <line x1="176" y1="44" x2="153" y2="44" stroke="#8DACC4" stroke-width="1.6" marker-end="url(#arw7)"/>
+        <text x="607" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">پاسخ ماژول نمی‌رسد</text>
+        <text x="607" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">داده روی نقشه ثابت می‌ماند</text>
+        <text x="429" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">خالی‌کردن حلقهٔ دریافت</text>
+        <text x="429" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">بازسازی پیوند سریال</text>
+        <text x="251" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">قطع و وصل کامل برق</text>
+        <text x="251" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">پس از ۳ دور تلاش ناموفق</text>
+        <text x="73" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">۳۰ تا ۶۰ دقیقه سکوت</text>
+        <text x="73" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">شروع تمیز کل دستگاه</text>
+      </svg>
+      <figcaption class="af-figure-foot"><span>شمارندهٔ هر بازیابی در جعبه‌سیاه دستگاه ثبت می‌شود و از روی داده‌ها قابل مشاهده است (صفحهٔ ۹)</span><span class="af-ltr">GSM Guardian</span></figcaption>
+    </figure>
+
+    <div class="af-note af-push">
+      <div class="af-note-title"><span class="dot warn"></span>یک مسیر هنوز جا مانده است</div>
+      <p>ریست زمان‌بندی‌شدهٔ خودکار (<span class="af-ltr">autoRestart</span>) هنوز نشست داده را پیش از ریست آزاد نمی‌کند؛ یعنی به‌روزرسانی‌ای که درست بعد از چنین ریستی برسد، می‌تواند همان خطای قدیمی را ببیند. این مورد در فهرست مسائل باز (صفحهٔ ۱۱) با پیشنهاد اصلاح مشخص ثبت شده است.</p>
+    </div>
+  </div>
+
+  <footer class="a4-footer">
+    <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
+    <span class="dots3"><i></i><i></i><i></i></span>
+    <span>محرمانه ـ ویژهٔ کارفرما</span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۰۷ / ۱۴</span></span>
+  </footer>
+</section>
+
+<!-- ══════════ صفحهٔ ۸ — GPS و کیفیت داده ══════════ -->
+<section class="a4-page">
+  <header class="a4-header">
+    <div class="a4-header-brand">
+      <img src="svg/logo%20ati%20farzam.svg" alt="" class="a4-header-logo" />
+      <img src="svg/typography%20ati%20farzam.svg" alt="آتی فرزام" class="a4-header-typo" />
+      <span class="a4-header-divider"></span>
+      <div><div class="a4-header-title">گزارش بازبینی و ارتقای فریم‌ور دستگاه ردیاب</div><div class="a4-header-subtitle">آتی فرزام ـ مهندسی فریم‌ور و سخت‌افزار ردیاب</div></div>
+    </div>
+    <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
+  </header>
+
+  <div class="a4-content" style="gap:3.2mm">
+    <div>
+      <div class="af-eyebrow"><span class="n">۰۷</span> به‌روزرسانی و پایداری ـ GPS و کیفیت داده</div>
+      <h2 class="af-h2">از «GPS ساعت‌ها برنمی‌گردد» تا مسیر تمیز روی نقشه</h2>
+    </div>
+
+    <p class="af-lead">نقص‌های GPS یک الگوی مشترک داشتند: داده وجود داشت، اما یا خوانده نمی‌شد، یا زمانش غلط بود، یا با تأخیر و نویز به رکورد تبدیل می‌شد. نتیجه‌اش روی سرور دیده می‌شد: خلأ چندساعته در مسیر، بلوک‌هایی از رکورد با زمان تکراری، شروعِ دیرهنگام سفر و زائده‌های کاذب روی نقشه. چهار اصلاح زیر هر چهار نشانه را پوشش می‌دهند.</p>
+
+    <div class="af-table-wrap tight">
+      <div class="af-h3" style="padding:2mm 3.5mm 0">چهار اصلاح GPS و کیفیت داده</div>
+      <table class="af-table">
+        <thead><tr><th style="width:13%">شناسه</th><th style="width:26%">نشانه در میدان</th><th style="width:38%">ریشه و اصلاح</th><th style="width:23%">عدد یا شاهد</th></tr></thead>
+        <tbody>
+          <tr><td class="td-num"><span class="idtag">MAIN-010</span></td><td>GPS ساعت‌ها برنمی‌گردد، در حالی که GSM و پیامک سالم‌اند</td><td>خواندن دادهٔ GPS به وقفهٔ پالس یک‌ثانیه‌ای (<span class="af-ltr">1PPS</span>) گره خورده بود؛ پالس فقط وقتی فیکس هست می‌آید، پس با رفتن فیکس، خودِ دادهٔ بازگشت هم خوانده نمی‌شد و حلقهٔ دریافت اشباع می‌شد. تخلیهٔ داده به سرویس دوره‌ای GPS منتقل شد و نگهبان دوطبقه اضافه شد</td><td>دستگاه بدون فیکس هم داده را می‌خواند و خودش فیکس را برمی‌گرداند</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-012</span></td><td>زمان رکوردها تکراری می‌شود؛ گاهی وضعیت «GNSS گم شد» کاذب روی سرور</td><td>در چرخه‌ای که پیام <span class="af-ltr">RMC</span> بی‌اعتبار بود، مختصات تازه با زمان قدیمی ثبت می‌شد و همان زمان به ساعت سیستم تحمیل می‌شد تا همهٔ رکوردهای بعدی هم آن را به ارث ببرند. پیام <span class="af-ltr">$GLGSA</span> هم حالت فیکس را با مقادیر فقط-گلوناس بازنویسی می‌کرد. چرخهٔ زمانی اصلاح و <span class="af-ltr">$GLGSA</span> رد شد</td><td>مهر زمانی رکوردها یکنواختِ صعودی؛ حالت فیکس از راه‌حل اصلی ماهواره‌ها</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-014</span></td><td>شروع هر سفر دیر ثبت می‌شود؛ صد متر اول مسیر نیست</td><td>بعد از هر بیداری از خواب، ۸ فیکس اول برای «گرم‌شدن» دور ریخته می‌شد و اولین رکورد حدود ۱۶ ثانیه دیر می‌آمد. شمارندهٔ گرم‌شدن حالا برای خواب‌های کوتاه حفظ می‌شود</td><td>خواب تا ۱۸۰ ثانیه: بدون دورریز؛ شروع سفر به‌موقع و سرِ جای واقعی‌اش</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-015</span></td><td>زائده روی نقشه و رویداد «تغییر جهت» کاذب در ترافیک و توقف</td><td>آزمون زاویه روی دو فیکس پشت‌سرهم با فاصلهٔ ۲ تا ۵ متر انجام می‌شد و نویز موقعیت را «پیچ» حساب می‌کرد. جای آن را زنجیرهٔ سه‌نقطه‌ای با فاصلهٔ کنترل‌شده گرفت</td><td>فاصلهٔ مبنا ۲۰ تا ۲۵۰ متر؛ برای پیچ کاذب ۱۵ درجه‌ای حالا ۵٫۲ متر خطای جانبی لازم است، نه ۱٫۳ متر</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <div class="af-eyebrow"><span class="n">۰۷ ـ الف</span> آنچه حالا از راه دور دیده می‌شود</div>
+      <div class="af-grid-2" style="margin-top:2mm">
+        <div class="finding"><div class="fn">قابلیت مشاهده ۱</div><h4>بی‌فیکسی، دیگر حدس نیست؛ عدد دارد</h4><p>جعبه‌سیاه دستگاه (صفحهٔ ۹) در هر رکورد، «سن بی‌فیکسی» و «اوج پرشدن حلقهٔ GPS» را ثبت می‌کند؛ یعنی برای هر دستگاه از روی خودِ داده‌ها معلوم است چند دقیقه بدون فیکس مانده و آیا حلقهٔ دریافتش به اشباع نزدیک شده است یا نه.</p></div>
+        <div class="finding"><div class="fn">قابلیت مشاهده ۲</div><h4>آنتن، آسمان یا پیکربندی؟ جواب با یک پیامک</h4><p>پرس‌وجوی جدید <span class="af-ltr">#GET:194</span> تعداد ماهواره‌های در دید هر صورت فلکی (GPS، GLONASS و…) را جدا جدا برمی‌گرداند تا معلوم شود مشکل از آنتن و آسمان است یا از پیکربندی ماهواره‌ها.</p></div>
+      </div>
+    </div>
+
+    <div class="af-note af-push">
+      <div class="af-note-title"><span class="dot warn"></span>یک ابهام که صادقانه باز می‌ماند</div>
+      <p>اگر انتخاب ماهواره در تنظیمات روی «فقط GLONASS» باشد، با ردشدن <span class="af-ltr">$GLGSA</span> ممکن است حالت فیکس دیگر به‌روز نشود. این حالت از روی کد قابل مشاهده است، اما روی سخت‌افزار نهایی راستی‌آزمایی نشده و در فهرست مسائل باز (صفحهٔ ۱۱) ثبت شده است؛ بیت اختصاصی آن در جعبه‌سیاه هم گذاشته شده تا اگر در میدان رخ داد، از روی داده‌ها دیده شود.</p>
+    </div>
+  </div>
+
+  <footer class="a4-footer">
+    <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
+    <span class="dots3"><i></i><i></i><i></i></span>
+    <span>محرمانه ـ ویژهٔ کارفرما</span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۰۸ / ۱۴</span></span>
+  </footer>
+</section>
+
+<!-- ══════════ صفحهٔ ۹ — صف داده، رویدادها و تشخیص ══════════ -->
+<section class="a4-page">
+  <header class="a4-header">
+    <div class="a4-header-brand">
+      <img src="svg/logo%20ati%20farzam.svg" alt="" class="a4-header-logo" />
+      <img src="svg/typography%20ati%20farzam.svg" alt="آتی فرزام" class="a4-header-typo" />
+      <span class="a4-header-divider"></span>
+      <div><div class="a4-header-title">گزارش بازبینی و ارتقای فریم‌ور دستگاه ردیاب</div><div class="a4-header-subtitle">آتی فرزام ـ مهندسی فریم‌ور و سخت‌افزار ردیاب</div></div>
+    </div>
+    <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
+  </header>
+
+  <div class="a4-content" style="gap:2.6mm">
+    <div>
+      <div class="af-eyebrow"><span class="n">۰۸</span> صف داده، رویدادها و تشخیص</div>
+      <h2 class="af-h2">از «آنلاین ولی ساکت» تا دستگاهی که خودش را گزارش می‌کند</h2>
+    </div>
+
+    <p class="af-lead">دو نقص، دستگاه را «زنده ولی بی‌صدا» می‌کرد: چراغ‌ها عادی، پیامک پاسخ‌گو، اما هیچ رکوردی به سرور نمی‌رسید. و تا امروز هر خرابی میدانی یعنی اعزام تکنسین، چون دستگاه هیچ شاهدی از وضعیتش نمی‌داد. این صفحه هر دو را پوشش می‌دهد: رفع سکوت داده، و جعبه‌سیاهی که از این به بعد شاهد دستگاه است.</p>
+
+    <div class="af-table-wrap tight">
+      <div class="af-h3" style="padding:2mm 3.5mm 0">دو نقصِ سکوت داده</div>
+      <table class="af-table">
+        <thead><tr><th style="width:13%">شناسه</th><th style="width:27%">نشانه در میدان</th><th style="width:60%">ریشه و اصلاح</th></tr></thead>
+        <tbody>
+          <tr><td class="td-num"><span class="idtag">MAIN-006</span></td><td>«آنلاین است و پیامک جواب می‌دهد، ولی هیچ رکوردی نمی‌رسد»</td><td>شمارندهٔ «رکورد ارسال‌نشده» با صف واقعی ناهم‌گام می‌شد و ماشین ارسال در حلقه‌ای خالی می‌چرخید؛ نه داده‌ای می‌رفت نه خطایی دیده می‌شد و قطع برق فقط تا رانش بعدی «درمان» بود. حالا هنگام ردشدن از رکوردِ ارسال‌شده، شمارنده هم کم می‌شود تا این دو همیشه یک حرف بزنند</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-013</span></td><td>پایان سفر دیر می‌رسد و با شروع سفر بعدی قاطی می‌شود</td><td>دستگاه با هر تعداد رکورد نفرستاده، ظرف حدود ۲۰ میلی‌ثانیه به خواب می‌رفت و بقیهٔ صف می‌ماند برای بیداری بعدی. حالا پیش از خواب تا ۱۰ دقیقه برای تخلیهٔ صف صبر می‌کند (<span class="af-ltr">SYSTEM_DATA_FLUSH_MAX_WAIT</span>) تا سفر سرِ وقت روی سرور بسته شود</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="af-table-wrap tight">
+      <div class="af-h3" style="padding:2mm 3.5mm 0">رویدادهای استاندارد سرور ـ تازه و اصلاح‌شده (<span class="idtag">MAIN-016</span>)</div>
+      <table class="af-table">
+        <thead><tr><th style="width:18%">رویداد</th><th style="width:41%">قبلاً چه می‌شد؟</th><th style="width:41%">حالا چه می‌شود؟</th></tr></thead>
+        <tbody>
+          <tr><td class="td-bold">قطع برق اصلی ـ <span class="af-ltr">IO 252</span></td><td>فقط رویداد عمومی ۶۶ می‌رفت و قاعدهٔ «سرقت و دست‌کاری» روی سرور فعال نمی‌شد</td><td>رویداد استاندارد قطع اتصال (<span class="af-ltr">252</span>) و جداسازی دستگاه (<span class="af-ltr">236</span>) می‌رود؛ داشبورد امنیتی سرور کامل می‌شود</td></tr>
+          <tr><td class="td-bold">تصادف ـ <span class="af-ltr">IO 247</span></td><td>تکانِ جداکردن دستگاهِ بی‌برق هم «تصادف» ثبت می‌شد و با هر لرزش تکرار می‌شد</td><td>تصادف فقط وقتی برق اصلی وصل است ثبت می‌شود، با ۵ ثانیه خنک‌سازی بین دو ثبت؛ تکانِ بی‌برق به رویداد جداسازی (<span class="af-ltr">236</span>) می‌رود</td></tr>
+          <tr><td class="td-bold">پایان سفر</td><td>روشن‌شدن دوبارهٔ سوئیچ در چند دقیقه، یک «پایان سفر» خیالی می‌ساخت و یک سفر، دو سفر دیده می‌شد</td><td>با روشن‌شدن سوئیچ، تایمر پایان سفر لغو می‌شود و پایانِ سفر فقط وقتی واقعی باشد ثبت می‌شود</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="af-table-wrap tight">
+      <div class="af-h3" style="padding:2mm 3.5mm 0">جعبه‌سیاه تشخیصی (<span class="idtag">MAIN-017</span>) ـ شاهدِ داخل هر رکورد</div>
+      <table class="af-table">
+        <thead><tr><th style="width:24%">جزء</th><th style="width:76%">شرح</th></tr></thead>
+        <tbody>
+          <tr><td class="td-bold">عناصر لحظهٔ ساخت رکورد</td><td>هفت IO یک‌بایتی در هر رکورد: قدرت سیگنال (<span class="af-ltr">202</span>)، پرچم‌ها و مرحلهٔ GSM ‏(<span class="af-ltr">203</span>، <span class="af-ltr">204</span>)، عقب‌ماندگی حلقه و سن پیوند (<span class="af-ltr">207</span>، <span class="af-ltr">208</span>)، پرچم‌های GPS ‏(<span class="af-ltr">210</span>) و شمارندهٔ بازیابی UART ‏(<span class="af-ltr">211</span>)</td></tr>
+          <tr><td class="td-bold">عناصر لحظهٔ ارسال</td><td>سه IO هنگام ارسال محاسبه می‌شوند: سن بی‌فیکسی (<span class="af-ltr">209</span>)، اوج حلقهٔ GPS ‏(<span class="af-ltr">212</span>) و بازپیکربندی‌های GPS ‏(<span class="af-ltr">213</span>)</td></tr>
+          <tr><td class="td-bold">فعال‌سازی و هزینه</td><td>با فرمان <span class="af-ltr">#SET:231,1</span> روشن می‌شود و پیش‌فرض خاموش است؛ وقتی روشن است هر بسته ۱۲ رکورد دارد (به‌جای ۱۴) تا جا برای دادهٔ تشخیصی باشد و <span class="af-ltr">#GETSTATUS</span> هم یک خط خلاصهٔ GSM (<span class="af-ltr">D/R/A/O</span>) اضافه می‌کند</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="af-note af-push">
+      <div class="af-note-title"><span class="dot sig"></span>معنای عملی جعبه‌سیاه</div>
+      <p>از این پس پاسخ بیشتر «دستگاه خراب شد»ها در خودِ داده‌هاست: از روی همین عناصر معلوم می‌شود مشکل از سیگنال بوده، از ثبت شبکه، از اشباع حلقه یا از بی‌فیکسی GPS ـ و دستگاه چند بار خودش را بازیابی کرده است. کافی است برای همان دستگاه، از راه دور فعالش کرد.</p>
+    </div>
+  </div>
+
+  <footer class="a4-footer">
+    <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
+    <span class="dots3"><i></i><i></i><i></i></span>
+    <span>محرمانه ـ ویژهٔ کارفرما</span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۰۹ / ۱۴</span></span>
+  </footer>
+</section>
+
+<!-- ══════════ صفحهٔ ۱۰ — پیکربندی، امنیت و سخت‌افزار ══════════ -->
+<section class="a4-page">
+  <header class="a4-header">
+    <div class="a4-header-brand">
+      <img src="svg/logo%20ati%20farzam.svg" alt="" class="a4-header-logo" />
+      <img src="svg/typography%20ati%20farzam.svg" alt="آتی فرزام" class="a4-header-typo" />
+      <span class="a4-header-divider"></span>
+      <div><div class="a4-header-title">گزارش بازبینی و ارتقای فریم‌ور دستگاه ردیاب</div><div class="a4-header-subtitle">آتی فرزام ـ مهندسی فریم‌ور و سخت‌افزار ردیاب</div></div>
+    </div>
+    <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
+  </header>
+
+  <div class="a4-content" style="gap:2.4mm">
+    <div>
+      <div class="af-eyebrow"><span class="n">۰۹</span> پیکربندی، امنیت و سخت‌افزار</div>
+      <h2 class="af-h2">پیش‌فرض‌های تازه، امنیت کارخانه و یک تغییر سخت‌افزاری</h2>
+    </div>
+
+    <p class="af-lead">این صفحه دربارهٔ چیزهایی است که از بیرون دستگاه دیده می‌شوند: پیش‌فرض‌های دستگاهِ تازه یا ریست‌شده، این‌که چه کسی می‌تواند به آن فرمان بدهد، و تغییری که به برد الکترونیکی مربوط است، نه فقط نرم‌افزار.</p>
+
+    <div class="af-table-wrap tight">
+      <div class="af-h3" style="padding:2mm 3.5mm 0">پیش‌فرض‌ها و امنیت کارخانه (<span class="idtag">MAIN-019</span>)</div>
+      <table class="af-table">
+        <thead><tr><th style="width:26%">موضوع</th><th style="width:37%">نسخهٔ تحویلی</th><th style="width:37%">نسخهٔ نهایی و معنایش</th></tr></thead>
+        <tbody>
+          <tr><td class="td-bold">شماره‌های مجاز پیامک</td><td>دو شمارهٔ داخلی از پیش در فریم‌ور ثبت بود؛ دستگاهِ ریست‌شده از هرکس آن شماره‌ها را داشت فرمان کامل می‌گرفت</td><td>حذف شد (مقادیر در این گزارش نمی‌آید). دستگاه فقط از شماره‌هایی فرمان می‌گیرد که مشتری ثبت کند</td></tr>
+          <tr><td class="td-bold">نمونه‌برداری و آستانه‌ها</td><td>ثبت هر ۱۸۰ ثانیه یا ۶۵٫۵ کیلومتر؛ مسیرها کم‌نقطه و دیر بودند</td><td>هر ۳۰ ثانیه، ۵۰۰ متر یا ۱۵ درجه؛ سرعت غیرمجاز ۱۲۰؛ رانندگی سبز و جعبه‌سیاه پیش‌فرض خاموش‌اند</td></tr>
+          <tr><td class="td-bold">نسخه‌ها</td><td>برنامه <span class="af-ltr">B1.05.20</span> و بوت‌لودر <span class="af-ltr">00.02.05</span></td><td>برنامه <span class="af-ltr">B1.06.60</span>، بوت‌لودر <span class="af-ltr">00.02.06</span> و بازبینی سخت‌افزار <span class="af-ltr">03.06.00</span>؛ هر سه از راه دور با <span class="af-ltr">#GETVER</span> خوانده می‌شوند</td></tr>
+          <tr><td class="td-bold">هزینهٔ این امنیت</td><td>دستگاهِ ریست‌شده خودش به سرور کارخانه وصل می‌شد و از ناوگان جدا می‌افتاد</td><td>دستگاهِ ریست کارخانه دیگر خودش به هیچ سروری وصل نمی‌شود و باید یک بار راه‌اندازی شود؛ این رفتار عمدی و امن است، نه نقص</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="af-table-wrap tight">
+      <div class="af-h3" style="padding:2mm 3.5mm 0">سه تغییر همراه در خودِ بوت‌لودر <span class="af-ltr">00.02.06</span></div>
+      <table class="af-table">
+        <thead><tr><th style="width:16%">شناسه</th><th style="width:42%">چه شد؟</th><th style="width:42%">چرا لازم بود؟</th></tr></thead>
+        <tbody>
+          <tr><td class="td-num"><span class="idtag">FOTA-002</span></td><td>اعتبارنامهٔ FTP ذخیره‌شده در W25Q حالا در همهٔ حالت‌های بازیابیِ به‌روزرسانی خوانده می‌شود</td><td>قبلاً برخی مسیرهای بازیابی سراغ مقدار پیش‌فرض کارخانه می‌رفتند و چرخهٔ تلاش برای به‌روزرسانی بی‌نتیجه تکرار می‌شد</td></tr>
+          <tr><td class="td-num"><span class="idtag">FOTA-003</span></td><td>بافر نام فایل‌های FTP از ۳۱ به ۴۰ بایت رسید و انتهای رشته‌ها گارد گرفت</td><td>نام فایل بلندی (بیش از ۳۰ نویسه) که با <span class="af-ltr">#SET:213</span> تنظیم می‌شد می‌توانست تا ۹ بایت بیرون از بافر بنویسد</td></tr>
+          <tr><td class="td-num"><span class="idtag">FOTA-004</span></td><td>نسخهٔ بوت‌لودر به <span class="af-ltr">00.02.06</span> رسید و حساب پیش‌فرض FTP کارخانه به‌روز شد</td><td>چرخش اعتبارنامهٔ پیش‌فرض؛ مقادیر محرمانه در این گزارش نمی‌آید</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <div class="af-grid-2">
+        <div class="finding"><div class="fn"><span class="idtag">MAIN-021</span></div><h4>سنسور دما روی بازبینی تازهٔ برد</h4><p>خط دادهٔ سنسور دما (DS18B20) از پایهٔ PA10 به PB2 رفت و پایهٔ تغذیهٔ سنسور (PB0) و فعال‌ساز RS485 ‏(PB1) برای بازبینی 03.06.00 برد تعریف شد. پیامد عملی: روی بردهای قدیمی دما خوانده نمی‌شود؛ سنسور پیش‌فرض خاموش است و با <span class="af-ltr">#SET:168,1</span> فعال می‌شود.</p></div>
+        <div class="finding"><div class="fn">دادهٔ سرور</div><h4>روی سرور چه می‌بینید؟</h4><p>رکوردهای چگال‌تر با پیش‌فرض تازه (۳۰ ثانیه/۵۰۰ متر)، رویداد استاندارد قطع برق (۲۵۲) و عناصر تشخیصی اختیاری (۲۰۲ تا ۲۱۳). هیچ قالب داده‌ای عوض نشده و پلتفرم فعلی بدون تغییر، دادهٔ تازه را می‌خواند.</p></div>
+      </div>
+    </div>
+
+    <div class="af-note af-push">
+      <div class="af-note-title"><span class="dot s2"></span>دو ثبت برای دقت، نه به‌عنوان تغییر</div>
+      <p>در شمارش ۲۹ تغییر، دو مورد «بدون تغییر رفتاری» آمده‌اند تا عدد نهایی گمراه‌کننده نباشد: ادعای قدیمیِ تغییر ماکروی چراغ‌ها (<span class="af-ltr">MAIN-022</span>) در هیچ‌یک از دو نسخهٔ کد وجود ندارد و برای تصحیح سابقه ثبت شده، و <span class="af-ltr">MAIN-023</span> فقط حذف دو خط خالی در ابتدای دو فایل است. هر دو در پیوست آمده‌اند.</p>
+    </div>
+  </div>
+
+  <footer class="a4-footer">
+    <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
+    <span class="dots3"><i></i><i></i><i></i></span>
+    <span>محرمانه ـ ویژهٔ کارفرما</span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۱۰ / ۱۴</span></span>
+  </footer>
+</section>
+
+<!-- ══════════ صفحهٔ ۱۱ — وضعیت فعلی و مسیر پیش رو ══════════ -->
+<section class="a4-page">
+  <header class="a4-header">
+    <div class="a4-header-brand">
+      <img src="svg/logo%20ati%20farzam.svg" alt="" class="a4-header-logo" />
+      <img src="svg/typography%20ati%20farzam.svg" alt="آتی فرزام" class="a4-header-typo" />
+      <span class="a4-header-divider"></span>
+      <div><div class="a4-header-title">گزارش بازبینی و ارتقای فریم‌ور دستگاه ردیاب</div><div class="a4-header-subtitle">آتی فرزام ـ مهندسی فریم‌ور و سخت‌افزار ردیاب</div></div>
+    </div>
+    <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
+  </header>
+
+  <div class="a4-content" style="gap:2.3mm">
+    <div>
+      <div class="af-eyebrow"><span class="n">۱۰</span> جمع‌بندی وضعیت، مسائل باز و گام‌های بعدی</div>
+      <h2 class="af-h2">الان کجا ایستاده‌ایم و چه چیزی هنوز باز است</h2>
+    </div>
+
+    <p class="af-lead">سه تصویر نهایی (برنامهٔ <span class="af-ltr">B1.06.60</span>، بوت‌لودر <span class="af-ltr">00.02.06</span> و ابزار <span class="af-ltr">FLASHER_913_02.06</span>) از روی مقایسهٔ خط‌به‌خط کد دو نسخه ارزیابی شده‌اند؛ این صفحه می‌گوید بسته چطور وارد ناوگان شود و چه چیزهایی هنوز باز است.</p>
+
+    <div>
+      <div class="af-eyebrow"><span class="n">۱۰ ـ الف</span> این تغییرات را جدا از هم اعمال نکنید</div>
+      <div class="af-grid-2" style="margin-top:2mm">
+        <div class="finding"><div class="fn"><span class="idtag">MAIN-006</span> + <span class="idtag">MAIN-013</span></div><h4>جفتِ «آنلاین ولی ساکت»</h4><p>هرکدام به‌تنهایی این خاموشی را برنمی‌گرداند؛ هر دو با هم لازم‌اند.</p></div>
+        <div class="finding"><div class="fn"><span class="idtag">FLASH-001</span> + <span class="idtag">FOTA-002</span> + <span class="idtag">MAIN-011</span></div><h4>زنجیرهٔ به‌روزرسانی</h4><p>فلشر بدون اعتبارنامهٔ درست و آزادسازی نشستِ پیش از ریست، کامل نمی‌شود.</p></div>
+        <div class="finding"><div class="fn"><span class="idtag">MAIN-002</span> + <span class="idtag">MAIN-017</span></div><h4>بافر و جعبه‌سیاه</h4><p>با جعبه‌سیاه روشن، دسته‌ها ۱۲ رکوردی می‌شوند؛ بدون سقفِ بافر، اولین دسته سرریز می‌سازد.</p></div>
+        <div class="finding"><div class="fn"><span class="idtag">MAIN-001</span> + <span class="idtag">FOTA-001</span></div><h4>زنجیرهٔ بوت، دوطرفه</h4><p>اصلاح یکی بدون دیگری ناهمسازی می‌سازد؛ هر دو با هم.</p></div>
+      </div>
+    </div>
+
+    <div class="af-table-wrap tight">
+      <div class="af-h3" style="padding:2mm 3.5mm 0">مسائل باز و ریسک‌های باقی‌مانده (شواهد کد و دفتر ثبت تغییرات)</div>
+      <table class="af-table">
+        <thead><tr><th style="width:33%">مسئلهٔ باز</th><th>اهمیت و اقدام پیشنهادی</th></tr></thead>
+        <tbody>
+          <tr><td class="td-bold">ریست خودکار (<span class="af-ltr">autoRestart</span>) نشست داده را رها نمی‌کند</td><td>به‌روزرسانیِ بلافاصله بعد از این ریست هنوز می‌تواند در FTP گیر کند؛ اقدام: افزودن همان آزادسازی نشست پیش از این ریست</td></tr>
+          <tr><td class="td-bold">قفل خواندن تراشه (RDP) فعال نیست</td><td>باینری‌ها اعتبارنامه در خود دارند و خواندن تراشه قفل نیست؛ اقدام: فعال‌سازی قفل و چرخش دوره‌ای اعتبارنامه‌ها</td></tr>
+          <tr><td class="td-bold">شاخه‌های اشکال‌زداییِ ثابت در کد زنده‌اند</td><td>از جمله ارسال پیامکِ کامنت‌شده با شمارهٔ ثابت (اینجا نمی‌آید)؛ اقدام: حذف در انتشار بعد</td></tr>
+          <tr><td class="td-bold">۲۰ مورد TODO/FIXME باز</td><td>از جمله انتظارهای بدون سقف روی واسط SPI که ریسک هنگ دارند؛ اقدام: تریاژ و سقف‌گذاری در انتشار بعد</td></tr>
+          <tr><td class="td-bold">شاهد آزمونی برای سه تصویر نهایی نیست</td><td>لاگ آزمون آزمایشگاهیِ قابل‌بازتولید ضمیمهٔ مستندات نیست؛ نتیجه‌ها شواهد کدی و مقایسه‌ای‌اند</td></tr>
+        </tbody>
+      </table>
+      <p style="padding:1.5mm 3.5mm 2mm;font-size:8pt;color:#47657e">سه یادداشت جزئی‌تر (پیکربندی فقط-GLONASS، اوج بافر GPS و ۹ قطعهٔ پیکربندی ساخت) در «یادداشت‌های باز» پیوست آمده‌اند.</p>
+    </div>
+
+    <div>
+      <div class="af-eyebrow"><span class="n">۱۰ ـ ب</span> گام‌های پیشنهادی</div>
+      <ol class="af-status-list" style="margin-top:2mm">
+        <li>بهره‌برداری مرحله‌ای: اول چند دستگاه؛ نسخه‌ها (<span class="af-ltr">#GETVER</span>) و تنظیمات (<span class="af-ltr">#GET:110</span> تا <span class="af-ltr">#GET:113</span>) را روی همهٔ آن‌ها مقایسه کنید.</li>
+        <li>روی همان دستگاه‌ها جعبه‌سیاه را روشن کنید (<span class="af-ltr">#SET:231,1</span>) و چند روز عناصر ۲۰۴، ۲۱۱ و ۲۱۲ را ببینید؛ تنها شاهد میدانیِ این بازبینی همین است.</li>
+        <li>«ریست کارخانه‌ای = راه‌اندازی دوباره» را در فرایند نصب و تعمیر ثبت کنید؛ هزینهٔ عملیاتیِ امنیتِ صفحهٔ ۱۰ است.</li>
+        <li>تا انتشار بعد: نشست داده در ریست خودکار، قفل RDP، آزمون نیمکتیِ فقط-GLONASS و SPI، و پاک‌سازی فایل‌های جانبیِ کنار کد.</li>
+      </ol>
+    </div>
+
+    <div class="af-note af-push">
+      <div class="af-note-title"><span class="dot s1"></span>سخن پایانی</div>
+      <p>چهار نقص بحرانیِ خفه‌کننده (گیرِ بوت، سرریز حافظهٔ رویداد، نابودی تنظیمات و به‌روزرسانی غیرممکن) با شاهد کدی بسته شده‌اند؛ بقیهٔ تغییرات عمدتاً پایداری و دیده‌شدن را بهتر کرده‌اند. شاهد میدانیِ این نسخه هنوز ساخته نشده است؛ قدم بعدی، ادعا نیست، داده ساختن است.</p>
+    </div>
+  </div>
+
+  <footer class="a4-footer">
+    <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
+    <span class="dots3"><i></i><i></i><i></i></span>
+    <span>محرمانه ـ ویژهٔ کارفرما</span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۱۱ / ۱۴</span></span>
+  </footer>
+</section>
+
+<!-- ══════════ صفحهٔ ۱۲ — پیوست الف: جدول کامل تغییرات (۱ از ۳) ══════════ -->
+<section class="a4-page">
+  <header class="a4-header">
+    <div class="a4-header-brand">
+      <img src="svg/logo%20ati%20farzam.svg" alt="" class="a4-header-logo" />
+      <img src="svg/typography%20ati%20farzam.svg" alt="آتی فرزام" class="a4-header-typo" />
+      <span class="a4-header-divider"></span>
+      <div><div class="a4-header-title">گزارش بازبینی و ارتقای فریم‌ور دستگاه ردیاب</div><div class="a4-header-subtitle">آتی فرزام ـ مهندسی فریم‌ور و سخت‌افزار ردیاب</div></div>
+    </div>
+    <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
+  </header>
+
+  <div class="a4-content" style="gap:2.4mm">
+    <div>
+      <div class="af-eyebrow"><span class="n">پیوست الف</span> جدول کامل تغییرات (۱ از ۳) ـ بحرانی و بالا</div>
+      <h2 class="af-h2">هر ۲۹ تغییر، دقیق و بدون حذف (بخش اول: بحرانی و بالا)</h2>
+    </div>
+
+    <p class="af-lead">متن فشرده و دقیق دفتر ثبت تغییرات: وضعیت پیش از اصلاح در نسخهٔ تحویلی (<span class="af-ltr">B1.05.20</span> / <span class="af-ltr">00.02.05</span>) و پس از اصلاح در نسخهٔ نهایی (<span class="af-ltr">B1.06.60</span> / <span class="af-ltr">00.02.06</span> / <span class="af-ltr">FLASHER_913_02.06</span>). ترتیب و شدت‌ها همان رتبه‌بندی دفتر ثبت است. این بخش: چهار تغییر بحرانی و شش تغییر با شدت بالا؛ ادامه در صفحهٔ ۱۳.</p>
+
+    <div class="af-table-wrap tight">
+      <table class="af-table">
+        <thead><tr><th style="width:22%">شناسه ـ شدت ـ موضوع</th><th style="width:39%">پیش از اصلاح</th><th style="width:39%">پس از اصلاح و شاهد</th></tr></thead>
+        <tbody>
+          <tr><td class="td-num"><span class="idtag">FLASH-001</span><br>بحرانی<br><b>فلشر دومرحله‌ایِ تعویض بوت‌لودر از راه دور</b></td><td>مسیر میدانی برای تعویض بوت‌لودر نبود</td><td>فلشر ۱۰٬۱۹۰ بایتی در <span class="af-ltr">0x08002000</span>: پاک‌کردن صفحه‌های ۰ تا ۳، بوت‌لودر توکار ۷٬۴۸۰ بایت، <span class="af-ltr">resetCause=0x4C</span>، تطبیق بایت‌به‌بایت؛ قطع برق وسط کار یعنی بریک (صفحهٔ ۶)</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-001</span><br>بحرانی<br><b>بارگذاری Stack برنامه در آغاز اجرا</b></td><td>اجرا روی Stack بوت‌لودر (<span class="af-ltr">0x200030C0</span>) هم‌پوشان با دادهٔ برنامه؛ پاک‌سازی <span class="af-ltr">.bss</span> نشانی بازگشت را صفر و HardFault می‌کرد</td><td><span class="af-ltr">Reset_Handler</span> مقدار <span class="af-ltr">MSP</span> را از <span class="af-ltr">[0x08002000]</span> می‌خواند؛ Stack جدا و سالم (صفحهٔ ۴)</td></tr>
+          <tr><td class="td-num"><span class="idtag">FOTA-001</span><br>بحرانی<br><b>پرش بوت‌لودر به برنامهٔ اصلی</b></td><td>پرش با Stack خود بوت‌لودر؛ نیمهٔ دوم نقص <span class="af-ltr">MAIN-001</span></td><td><span class="af-ltr">jump()</span> پیش از پرش به <span class="af-ltr">[0x08002004]</span> با <span class="af-ltr">MSR MSP,R0</span> مقدار <span class="af-ltr">Stack Pointer</span> را روی مقدار برنامه می‌گذارد (صفحهٔ ۴)</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-002</span><br>بحرانی<br><b>سقف دستهٔ رویدادهای AVL</b></td><td>نوشتن ۵۵ تا ۳۵۵ بایت بیرون از <span class="af-ltr">eventsContent[]</span>؛ ریست واچ‌داگ و <span class="af-ltr">Codec8</span> مخدوش (صفحهٔ ۵)</td><td>رویداد ۱۵ ← ۱۴ (۱۲ با جعبه‌سیاه)؛ بافر و سقف سیم ۱۴۶۰ بایت</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-004</span><br>بالا<br><b>ارتقای غیرمخربِ تنظیمات مشتری</b></td><td>برگرداندن بی‌صدای تنظیمات مشتری به کارخانه در آپدیت، یا پاک‌شدن حلقهٔ رکوردها در هر بوت (صفحهٔ ۵)</td><td>بدون پاک‌کردن (<span class="af-ltr">TC_NOP</span>)، ثبت پیش از اجرا (حداکثر یک بار)، فرادادهٔ مهرشدهٔ نویسنده</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-011</span><br>بالا<br><b>رهاکردن نشست داده پیش از ریست فرمانی</b></td><td>نشست روی ریست گرم می‌ماند؛ هر FOTA فرمانی در ۱۲۰ ثانیه با خطای Bearer می‌مرد (صفحهٔ ۷)</td><td>پیش از <span class="af-ltr">#COM:913/914/910</span>: ‏<span class="af-ltr">AT+CIPSHUT</span> و <span class="af-ltr">AT+SAPBR=0,1</span> (هر یک ≤ ۲۰ ثانیه)؛ وابسته به <span class="af-ltr">MAIN-008</span>، <span class="af-ltr">FOTA-002</span>، <span class="af-ltr">FLASH-001</span></td></tr>
+          <tr><td class="td-num"><span class="idtag">FOTA-002</span><br>بالا<br><b>اعتبارنامهٔ FTP در مسیرهای بازیابی</b></td><td>برخی حالت‌های <span class="af-ltr">fotaNextState()</span> سراغ پیش‌فرض کارخانه می‌رفتند؛ واحد سفارشی با برنامهٔ نیمه‌پاک سرگردان می‌شد</td><td><span class="af-ltr">ftpData</span> ذخیره‌شده در W25Q در همهٔ حالت‌های بازیابی اعمال می‌شود (صفحهٔ ۱۰)</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-003</span><br>بالا<br><b>نویسهٔ حالتِ آدرس سرور</b></td><td><span class="af-ltr">checkSettingsBand()</span> نویسهٔ اول <span class="af-ltr">server_url</span> را نابود می‌کرد؛ واحد IP-حالت وصل نمی‌شد ولی پیامکش کار می‌کرد (صفحهٔ ۵)</td><td>نویسهٔ حالت (<span class="af-ltr">'#'</span>/<span class="af-ltr">0xFF</span>) در بوت‌ها سالم می‌ماند</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-005</span><br>بالا<br><b>پایهٔ ناحیهٔ رکوردها در W25Q</b></td><td>رکورد اشتباه «ارسال‌شده» علامت می‌خورد؛ تل‌متری تکراری یا حذف‌شده (صفحهٔ ۵)</td><td>پایهٔ ناحیه درست شد؛ علامت روی رکورد واقعی می‌نشیند</td></tr>
+        <tr><td class="td-num"><span class="idtag">MAIN-006</span><br>بالا<br><b>شمارندهٔ رکوردهای ارسال‌نشده</b></td><td>شمارنده با ردکردن رکوردِ ارسالی کم نمی‌شد؛ دستگاه آنلاین و پیامک‌پاسخ‌گو ولی بدون هیچ آپلود (صفحهٔ ۹)</td><td>شمارنده هنگام ردکردن کم می‌شود؛ آپلود بدون ریبوت برمی‌گردد؛ زوج الزامیِ <span class="af-ltr">MAIN-013</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="font-size:8.2pt;color:#47657e">ادامه در صفحهٔ ۱۳: چهار تغییر بالای دیگر و هر پنج تغییر متوسط.</p>
+  </div>
+
+  <footer class="a4-footer">
+    <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
+    <span class="dots3"><i></i><i></i><i></i></span>
+    <span>محرمانه ـ ویژهٔ کارفرما</span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۱۲ / ۱۴</span></span>
+  </footer>
+</section>
+
+<!-- ══════════ صفحهٔ ۱۳ — پیوست ب: جدول کامل تغییرات (۲ از ۳) ══════════ -->
+<section class="a4-page">
+  <header class="a4-header">
+    <div class="a4-header-brand">
+      <img src="svg/logo%20ati%20farzam.svg" alt="" class="a4-header-logo" />
+      <img src="svg/typography%20ati%20farzam.svg" alt="آتی فرزام" class="a4-header-typo" />
+      <span class="a4-header-divider"></span>
+      <div><div class="a4-header-title">گزارش بازبینی و ارتقای فریم‌ور دستگاه ردیاب</div><div class="a4-header-subtitle">آتی فرزام ـ مهندسی فریم‌ور و سخت‌افزار ردیاب</div></div>
+    </div>
+    <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
+  </header>
+
+  <div class="a4-content" style="gap:2.4mm">
+    <div>
+      <div class="af-eyebrow"><span class="n">پیوست ب</span> جدول کامل تغییرات (۲ از ۳) ـ ادامهٔ بالا و متوسط</div>
+      <h2 class="af-h2">هر ۲۹ تغییر، دقیق و بدون حذف (بخش دوم)</h2>
+    </div>
+
+    <p class="af-lead">ادامهٔ پیوست الف: چهار تغییر با شدت بالای باقی‌مانده و هر پنج تغییر متوسط. بخش پایانی ـ تغییرهای کم‌اهمیت، رکورد جایگزین‌شدهٔ <span class="af-ltr">MAIN-020</span>، یادداشت‌های باز و فرمان‌های تازهٔ این نسخه ـ در صفحهٔ ۱۴ است.</p>
+
+    <div class="af-table-wrap tight">
+      <table class="af-table">
+        <thead><tr><th style="width:22%">شناسه ـ شدت ـ موضوع</th><th style="width:39%">پیش از اصلاح</th><th style="width:39%">پس از اصلاح و شاهد</th></tr></thead>
+        <tbody>
+          <tr><td class="td-num"><span class="idtag">MAIN-007</span><br>بالا<br><b>ماشین حالت توان مودم (PWRKEY)</b></td><td>پرچم <span class="af-ltr">needPowerOf</span> پاک نمی‌شد؛ چرخهٔ توان در هر گذر و امکان خاموش‌ماندن مودم (صفحهٔ ۷)</td><td>ماشین ۷ وضعیتی نابلاکینگ: پالس ۱۸۰۰، خاموشی ۳۵۰۰ میلی‌ثانیه، قطع ریل بعد از ۳ دور ناکام؛ پرچم پاک می‌شود</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-008</span><br>بالا<br><b>صبر برای رجیستر شبکه و شروع نشست</b></td><td>مهلت حدود ۴ ثانیه؛ ریست وسط رجیستر روی سیم‌کارت کند یا سلول شلوغ؛ قطعیِ بیش از ۹۰ دقیقه و دستگاه مرده تا ریست دستی (صفحهٔ ۷)</td><td><span class="af-ltr">GSM_TIMEOUT_60</span> = ‏۶۰ ثانیه؛ صبر CME ‏۸ دور، CPIN ‏۶ بار، CREG-صفر ۶ دور، اتچ ۳ دور</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-009</span><br>بالا<br><b>شنوایی پردازنده نسبت به مودم، نگهبان GSM</b></td><td>اشباع یا ناهم‌زمانی حلقهٔ دریافت و ناشنوایی دائمی پردازنده نسبت به مودم؛ نجات فقط با ریبوت (صفحهٔ ۷)</td><td><span class="af-ltr">simRxCounter</span> اتمیک، <span class="af-ltr">Sim_RX_Flush()</span>، ‏<span class="af-ltr">Sim_USART_Recover()</span>؛ نگهبان دوطبقه (ریست کنترل‌شده در سکون ~۳۰/۶۰ دقیقه)؛ <span class="af-ltr">io211</span>/<span class="af-ltr">io212</span></td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-010</span><br>بالا<br><b>سرویس GPS مستقل از داشتن فیکس</b></td><td>پارس <span class="af-ltr">NMEA</span> پشت وقفهٔ 1PPS مشروط به فیکس؛ بدون فیکس یعنی بدون پارس و سرریز حلقه، با قطعی چندساعته (صفحهٔ ۸)</td><td>تخلیه در <span class="af-ltr">GPS_service()</span> با پمپ همکارانه؛ واچ‌داگ دوشرطی GPS که خودِ قطعی را هم رویداد می‌کند</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-012</span><br>متوسط<br><b>درستی زمان و فیکس GPS</b></td><td>مهر زمانی در <span class="af-ltr">parseGGA/parseRMC</span> یخ می‌زد؛ <span class="af-ltr">$GLGSA</span> رد می‌شد و عنصر <span class="af-ltr">io69</span> با GLONASS کم‌ماهواره می‌پرد</td><td>زمان از فریم تازه خوانده می‌شود؛ <span class="af-ltr">$GLGSA</span> رد نمی‌شود؛ <span class="af-ltr">io69</span> و <span class="af-ltr">io181/182</span> ‏(PDOP/HDOP) نمایندهٔ راه‌حل اصلی‌اند (صفحهٔ ۸)</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-013</span><br>متوسط<br><b>تخلیهٔ صف داده پیش از خواب</b></td><td>پنجرهٔ تخلیه پیش از خواب حدود ۲۰ میلی‌ثانیه بود؛ پایان سفر به نشست بعدی می‌افتاد (صفحهٔ ۹)</td><td><span class="af-ltr">SYSTEM_DATA_FLUSH_MAX_WAIT=30000</span> تیک، یعنی ۱۰ دقیقه تخلیه پیش از خواب؛ پایان سفر در همان نشست می‌رسد</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-019</span><br>متوسط<br><b>پیش‌فرض‌ها و امنیت کارخانه</b></td><td>دو شمارهٔ داخلیِ ازپیش‌ثبت‌شده با اختیار کامل فرمان؛ نمونه‌برداری ۱۸۰ ثانیه یا ۶۵٫۵ کیلومتر (صفحهٔ ۱۰)</td><td>حذف شماره‌ها؛ نسخه‌ها <span class="af-ltr">B1.06.60</span> و <span class="af-ltr">HW 03.06.00</span>؛ نمونه‌برداری ۳۰ ثانیه/۵۰۰ متر/۱۵ درجه، پورت ۵۰۲۷، سرعت غیرمجاز ۱۲۰، نوع ارسال رویداد احتراق ۲، رانندگی سبز خاموش؛ واحد ریست‌شده تا راه‌اندازی دوباره به سرور مشتری وصل نیست</td></tr>
+          <tr><td class="td-num"><span class="idtag">FOTA-003</span><br>متوسط<br><b>بافر نام فایل‌های FTP</b></td><td>بافر ۳۱ بایتی؛ نام بلندی که با <span class="af-ltr">#SET:213</span> تنظیم می‌شد تا ۹ بایت بیرون از بافر می‌نوشت و حافظهٔ کناری را خراب می‌کرد</td><td>بافر ۴۰ بایت با گارد طول و بستن انتهای رشته (NUL) (صفحهٔ ۱۰)</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-021</span><br>متوسط<br><b>نقشهٔ پایه‌های سنسور دما و RS485</b></td><td>خط دادهٔ سنسور دما (DS18B20) روی <span class="af-ltr">PA10</span>؛ پایه‌های <span class="af-ltr">PB0</span>/<span class="af-ltr">PB1</span> تعریف‌نشده</td><td>داده از <span class="af-ltr">PA10</span> به <span class="af-ltr">PB2</span>؛ <span class="af-ltr">PB0</span> تغذیهٔ سنسور و <span class="af-ltr">PB1</span> فعال‌ساز RS485 (بازبینی برد <span class="af-ltr">03.06.00</span>)؛ روی بردهای قدیمی دما (<span class="af-ltr">IO 72</span>) خوانده نمی‌شود؛ پروتکل 1-Wire دست‌نخورده (صفحهٔ ۱۰)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer class="a4-footer">
+    <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
+    <span class="dots3"><i></i><i></i><i></i></span>
+    <span>محرمانه ـ ویژهٔ کارفرما</span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۱۳ / ۱۴</span></span>
+  </footer>
+</section>
+
+<!-- ══════════ صفحهٔ ۱۴ — پیوست ج: جدول کامل تغییرات (۳ از ۳) و یادداشت‌ها ══════════ -->
+<section class="a4-page">
+  <header class="a4-header">
+    <div class="a4-header-brand">
+      <img src="svg/logo%20ati%20farzam.svg" alt="" class="a4-header-logo" />
+      <img src="svg/typography%20ati%20farzam.svg" alt="آتی فرزام" class="a4-header-typo" />
+      <span class="a4-header-divider"></span>
+      <div><div class="a4-header-title">گزارش بازبینی و ارتقای فریم‌ور دستگاه ردیاب</div><div class="a4-header-subtitle">آتی فرزام ـ مهندسی فریم‌ور و سخت‌افزار ردیاب</div></div>
+    </div>
+    <div class="a4-header-meta"><span>سند <b class="af-ltr">AF-FWR-1404-01</b></span><i>|</i><span>نسخهٔ <b>۱٫۰</b></span><i>|</i><span><b>مهر ۱۴۰۴</b></span></div>
+  </header>
+
+  <div class="a4-content" style="gap:2mm">
+    <div>
+      <div class="af-eyebrow"><span class="n">پیوست ج</span> جدول کامل تغییرات (۳ از ۳) ـ کم‌اهمیت، یادداشت‌های باز و فرمان‌ها</div>
+      <h2 class="af-h2">هر ۲۹ تغییر، دقیق و بدون حذف (بخش پایانی)</h2>
+    </div>
+
+    <div class="af-table-wrap tight" style="line-height:1.5">
+      <table class="af-table">
+        <thead><tr><th style="width:22%">شناسه ـ شدت ـ موضوع</th><th style="width:39%">پیش از اصلاح</th><th style="width:39%">پس از اصلاح و شاهد</th></tr></thead>
+        <tbody>
+          <tr><td class="td-num"><span class="idtag">MAIN-014</span><br>کم<br><b>گرم‌نگه‌داشتن GPS میان خواب‌ها</b></td><td>با هر بیداری، هشت فیکس معتبر اول دور ریخته می‌شد و نخستین رکورد حدود ۱۶ ثانیه دیر می‌رسید</td><td>وضعیت گرم در خواب‌های حداکثر ۱۸۰ ثانیه‌ای حفظ می‌شود (صفحهٔ ۸)</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-015</span><br>کم<br><b>دروازهٔ فاصله برای زاویهٔ حرکت</b></td><td>در سرعت کم، چرخش‌های کاذب و خار روی نقشه ساخته می‌شد</td><td>دروازهٔ مسافت ۲۰ تا ۲۵۰ متر؛ چرخش فقط با پیمایش واقعی ثبت می‌شود (با تأخیر جزئی در پیچ تنگ) (صفحهٔ ۸)</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-016</span><br>کم<br><b>رویدادهای برق، ضربه و سفر روی سرور</b></td><td>قطع برق فقط رویداد ۶۶ بود؛ ضربهٔ بی‌برق «تصادف» و قطع کوتاه برق، پایان سفر کاذب می‌ساخت</td><td>رویداد ۲۵۲ هنگام قطع برق؛ ضربهٔ بی‌برق ۲۳۶ نه ۲۴۷؛ ضدلرزش تصادف ۵ ثانیه؛ قاعده‌های سرور روی ۶۶ به‌روز شوند (صفحهٔ ۸)</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-017</span><br>کم<br><b>جعبه‌سیاه تشخیصیِ انتخابی</b></td><td>هیچ دیده‌شدن درونی روی سرور نبود</td><td><span class="af-ltr">#SET:231</span> (پیش‌فرض خاموش): ده عنصر ۲۰۲ تا ۲۱۳ و دستهٔ ۱۲ رکوردی (صفحهٔ ۹)</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-018</span><br>کم<br><b>ماهواره‌های هر منظومه با پیامک</b></td><td>فقط <span class="af-ltr">#GET:192</span> بود و شمارش ماهواره‌های در-دیدِ هر منظومه وجود نداشت</td><td><span class="af-ltr">parseGSV()</span> شمارش در-دیدِ هر منظومه را جدا می‌کند؛ <span class="af-ltr">#GET:194</span> آن را گزارش می‌کند (صفحهٔ ۸)</td></tr>
+          <tr><td class="td-num"><span class="idtag">FOTA-004</span><br>کم<br><b>نسخهٔ بوت‌لودر و حساب جایگزین FTP</b></td><td>بوت‌لودر <span class="af-ltr">00.02.05</span> و حساب پیش‌فرض قدیمی FTP</td><td>بوت‌لودر <span class="af-ltr">00.02.06</span> و حساب تازه (مقادیر محرمانه نمی‌آید)؛ حساب جایگزین باید سمت سرور باشد وگرنه بازیابی ناکام می‌ماند (صفحهٔ ۱۰)</td></tr>
+          <tr><td class="td-num"><span class="idtag">FLASH-002</span><br>کم<br><b>اجزای حداقلی داخل فلشر</b></td><td>ـ</td><td>۲۴ تابع پوششی صفر‌بایتی و درایور حداقلی W25Q داخل فلشر؛ اثر اجرایی ندارد و فقط ساخت و اندازه را کامل می‌کند</td></tr>
+          <tr><td class="td-num"><span class="idtag">MAIN-020</span> + <span class="idtag">MAIN-022</span> + <span class="idtag">MAIN-023</span><br>سوابق بدون تغییر رفتاری</td><td>ـ</td><td><span class="af-ltr">MAIN-020</span> جایگزین‌شده است و محتوایش زیر <span class="af-ltr">MAIN-021</span> تا <span class="af-ltr">MAIN-023</span> آمده؛ ویرایش ماکروی چراغ‌ها (<span class="af-ltr">MAIN-022</span>) در هیچ‌یک از دو نسخهٔ کد نیست؛ <span class="af-ltr">MAIN-023</span> حذف یک خط خالی در ابتدای دو فایل است (کد ماشینی یکسان). هر سه صرفاً برای درستی سابقه ثبت شده‌اند (صفحهٔ ۱۰)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="af-note">
+      <div class="af-note-title"><span class="dot s2"></span>یادداشت‌های بازِ تشخیصی و پوشش تفاوت کد</div>
+      <p>در پیکربندی فقط-GLONASS ممکن است <span class="af-ltr">fix_mode</span> به‌روز نشود (تأییدنشده؛ پیش از اتکا آزمون نیمکتی لازم است)؛ اوج بافر GPS (<span class="af-ltr">io212</span>) بدون قفل وقفه ریست می‌شود و کران پایین است؛ از ۲۹۷ قطعه‌تغییر در ۲۸ فایل، ۲۸۸ قطعه زیر ۲۸ تغییر نشسته و ۹ قطعهٔ ساخت مستند نشده است.</p>
+    </div>
+
+    <div>
+      <div class="af-eyebrow"><span class="n">ج ـ الف</span> فرمان‌ها و پرس‌وجوهای کلیدی این نسخه</div>
+      <div class="af-facts" style="margin-top:2mm">
+        <div><b><span class="af-ltr">#COM:913</span></b><span>آغاز به‌روزرسانی دومرحله‌ای؛ ۹۱۴ و ۹۱۰ ریست‌های همراه</span></div>
+        <div><b><span class="af-ltr">#SET:231,1</span></b><span>روشن‌کردن جعبه‌سیاه؛ <span class="af-ltr">#GET:231</span> وضعیت آن</span></div>
+        <div><b><span class="af-ltr">#GET:194</span></b><span>ماهواره‌های هر منظومه؛ <span class="af-ltr">#GETVER</span> خواندن نسخه‌ها</span></div>
+        <div><b><span class="af-ltr">#GET:110</span> تا <span class="af-ltr">#GET:113</span></b><span>خواندن چهار بلوک تنظیمات برای مقایسهٔ پیش و پس از ارتقا</span></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="a4-footer">
+    <span>آتی فرزام ـ توسعهٔ نرم‌افزار و سخت‌افزار ردیاب</span>
+    <span class="dots3"><i></i><i></i><i></i></span>
+    <span>محرمانه ـ ویژهٔ کارفرما</span>
+    <span class="a4-footer-left"><img class="a4-footer-en" src="svg/typography%20english.svg" alt="Ati Farzam" /><span class="a4-footer-page">۱۴ / ۱۴</span></span>
   </footer>
 </section>
 
