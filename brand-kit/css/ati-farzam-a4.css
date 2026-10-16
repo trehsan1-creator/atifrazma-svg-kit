@@ -164,9 +164,9 @@ img{border-radius:var(--af-r-sm)}
 
 /* ---------- ۱۰) شکل و نمودارهای پترنی ---------- */
 .af-figure{border-top:2px solid var(--af-ink);padding-top:3mm;page-break-inside:avoid;break-inside:avoid}
-.af-figure-head{display:flex;align-items:flex-end;justify-content:space-between;gap:8mm;margin-bottom:3mm}
+.af-figure-head{display:flex;align-items:flex-end;justify-content:space-between;gap:8mm;margin-bottom:3.5mm}
 .af-figure-title{font-size:9.5pt;font-weight:800;color:var(--af-ink);line-height:1.5}
-.af-figure-sub{font-size:7.2pt;color:var(--af-ink-60);font-weight:500;margin-top:.5mm}
+.af-figure-sub{font-size:7.2pt;color:var(--af-ink-60);font-weight:500;margin-top:.8mm;line-height:1.7}
 .af-figure-fig{font-size:7pt;font-weight:800;color:var(--af-signal-deep);white-space:nowrap}
 .af-figure-foot{display:flex;align-items:center;justify-content:space-between;gap:8mm;margin-top:2.5mm;font-size:6.8pt;color:var(--af-ink-60);font-weight:500}
 .af-chart-svg{width:100%;height:auto;display:block}
@@ -240,17 +240,43 @@ img{border-radius:var(--af-r-sm)}
 .af-pdots i.warn{background:var(--af-sun)}
 
 /* ---------- ۱۴) بلوک‌دیاگرام ---------- */
-.af-diagram{border-top:2px solid var(--af-ink);padding-top:3mm;page-break-inside:avoid;break-inside:avoid}
-.af-flow{display:grid;grid-template-columns:1fr 9mm 1fr 9mm 1fr 9mm 1fr;align-items:stretch}
-.af-flow-step{border-top:3px solid var(--af-ink);padding-top:2.5mm}
+/* زبان دیاگرام بلوکی — خلوت و خوانا:
+ *   گره‌ها با گوشه‌های گرد و قاب نرم؛ تنها گرهٔ توپر سرمه‌ای = هسته.
+ *   اتصال‌ها فقط ارتوگونال (افقی/عمودی) با پیکان گرد؛ بدون خط موربِ تقاطع‌دار.
+ *   برچسب گذرگاه فقط داخل قرص کوچکِ mono؛ هیچ جملهٔ توضیحی داخل SVG نمی‌آید
+ *   (توضیح در زیرعنوان شکل، زیرنویس یا یادداشت HTML کنارش می‌نشیند). */
+.af-diagram{border-top:2px solid var(--af-ink);padding-top:3.5mm;page-break-inside:avoid;break-inside:avoid}
+.af-bd-cap{font-size:8.5px;font-weight:800;fill:var(--af-ink-60)}          /* عنوان ستون، بالای دیاگرام */
+.af-bd-title{font-size:10.5px;font-weight:800;fill:var(--af-ink)}          /* عنوان گره */
+.af-bd-sub{font-size:8px;font-weight:500;fill:var(--af-ink-60)}            /* زیرعنوان کوتاه گره */
+.af-bd-title.on-ink{fill:#fff}
+.af-bd-sub.on-ink{fill:var(--af-ink-20)}
+.af-bd-node{fill:var(--af-paper);stroke:var(--af-ink-20);stroke-width:1.4}
+.af-bd-node.sig{fill:var(--af-ink-05);stroke:var(--af-signal)}
+.af-bd-core{fill:var(--af-ink)}
+.af-bd-link{stroke:var(--af-ink-40);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.af-bd-chip{fill:var(--af-paper);stroke:var(--af-ink-10);stroke-width:1.2}
+.af-bd-chip-t{font-size:7.5px;font-weight:800;fill:var(--af-ink-60);font-family:var(--af-mono)}
+.af-bd-flag{font-size:8px;font-weight:800}                                  /* یادداشت کوتاه کنار اتصال */
+.af-bd-note{margin-top:2.2mm;font-size:7.4pt;line-height:1.85;color:var(--af-ink-60);font-weight:500;text-align:center}  /* جایگزین HTML برای جمله‌های توضیحی */
+
+.af-flow{display:grid;grid-template-columns:1fr 10mm 1fr 10mm 1fr 10mm 1fr;align-items:stretch}
+.af-flow-step{border-top:3px solid var(--af-ink);padding-top:2.8mm}
 .af-flow-step.dim{border-top-color:var(--af-ink-20)}
 .af-flow-step.sig{border-top-color:var(--af-signal)}
-.af-flow-num{font-size:6.8pt;font-weight:800;color:var(--af-signal-deep);margin-bottom:1mm}
-.af-flow-title{font-size:8.6pt;font-weight:800;color:var(--af-ink);margin-bottom:1.2mm;line-height:1.5}
-.af-flow-list{list-style:none;font-size:7.2pt;line-height:1.75;color:var(--af-text)}
+.af-flow-step.ink{border-top-color:var(--af-ink)}
+.af-flow-step.bad{border-top-color:var(--af-coral)}
+.af-flow-step.bad .af-flow-num{color:var(--af-bad)}
+.af-flow-step.aqua{border-top-color:var(--af-aqua)}
+.af-flow-step.aqua .af-flow-num{color:#0A8A76}
+.af-flow-num{font-size:6.8pt;font-weight:800;color:var(--af-signal-deep);margin-bottom:1.2mm}
+.af-flow-title{font-size:8.6pt;font-weight:800;color:var(--af-ink);margin-bottom:1.4mm;line-height:1.5}
+.af-flow-list{list-style:none;font-size:7.2pt;line-height:1.8;color:var(--af-text)}
 .af-flow-list li{display:flex;gap:6px}
 .af-flow-list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--af-signal);flex-shrink:0;margin-top:6px}
-.af-flow-arrow{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--af-ink-60)}
+.af-flow-step.bad .af-flow-list li::before{background:var(--af-coral)}
+.af-flow-step.aqua .af-flow-list li::before{background:var(--af-aqua)}
+.af-flow-arrow{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:var(--af-ink-60)}
 .af-flow-arrow .a{font-size:11pt;line-height:1}
 .af-flow-arrow .p{font-size:6.2pt;font-weight:700;color:var(--af-ink-60);white-space:nowrap;background:var(--af-ink-05);border:1.5px solid var(--af-ink-10);padding:1.5px 7px;border-radius:var(--af-r-pill)}
 

@@ -281,34 +281,30 @@
         <div><div class="af-figure-title">تحویل اجرا از بوت‌لودر به برنامه و جایگاه Stack در RAM</div><div class="af-figure-sub">بالا: مسیر پرش. پایین: نقشهٔ RAM؛ جایی که Stack به‌ارث‌رسیده قرار می‌گرفت، امروز داخل داده‌های برنامه است.</div></div>
         <span class="af-figure-fig">شکل ۲</span>
       </div>
-      <svg class="af-chart-svg" viewBox="0 0 680 238" role="img" aria-label="تحویل بوت‌لودر به برنامه و نقشهٔ حافظه" style="font-family:'Peyda',Tahoma,sans-serif">
-        <g font-size="10.5" font-weight="700" fill="#102333">
-          <rect x="452" y="18" width="204" height="52" rx="14" fill="#EFF7FC" stroke="#0E9BE8" stroke-width="1.4"/>
-          <text x="554" y="40" text-anchor="middle">بوت‌لودر FOTA ـ 0x08000000</text>
-          <text x="554" y="57" text-anchor="middle" font-size="7.5" font-weight="500" fill="#54748E">پایان به‌روزرسانی: پرش به برنامه (jump)</text>
-          <rect x="24" y="18" width="230" height="52" rx="14" fill="#fff" stroke="#C3D9E8"/>
-          <text x="139" y="40" text-anchor="middle">برنامهٔ اصلی ـ 0x08002000</text>
-          <text x="139" y="57" text-anchor="middle" font-size="7.5" font-weight="500" fill="#54748E">جدول بردارها در ابتدای برنامه</text>
-        </g>
-        <path d="M452,44 L262,44" stroke="#8DACC4" stroke-width="1.4" fill="none" marker-end="url(#arwFw)"/>
-        <text x="357" y="34" text-anchor="middle" font-size="7.5" font-weight="700" fill="#D98E00">قبل: پرش بدون تنظیم MSP</text>
-        <text x="357" y="62" text-anchor="middle" font-size="7.5" font-weight="700" fill="#0B74C9">بعد: MSR MSP از 0x08002000، در هر دو طرف</text>
+      <svg class="af-chart-svg" viewBox="0 0 680 180" role="img" aria-label="تحویل بوت‌لودر به برنامه و نقشهٔ حافظه" style="font-family:'Peyda',Tahoma,sans-serif">
         <defs><marker id="arwFw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#54748E"/></marker></defs>
-        <g>
-          <rect x="24" y="104" width="632" height="34" rx="12" fill="#EFF7FC" stroke="#C3D9E8"/>
-          <rect x="24" y="104" width="330" height="34" rx="12" fill="#C3D9E8"/>
-          <rect x="476" y="104" width="180" height="34" rx="12" fill="#0E9BE8" opacity="0.28"/>
-          <text x="180" y="125" text-anchor="middle" font-size="8.5" font-weight="700" fill="#25455F">داده‌های برنامه (.bss/.data) ـ حدود ۱۵٫۴ KB</text>
-          <text x="566" y="125" text-anchor="middle" font-size="8.5" font-weight="700" fill="#0B74C9">Stack صحیح برنامه (CSTACK)</text>
-          <line x1="330" y1="96" x2="330" y2="146" stroke="#FF6659" stroke-width="2.4"/>
-          <circle cx="330" cy="96" r="4" fill="#FF6659"/>
-          <text x="330" y="88" text-anchor="middle" font-size="8" font-weight="800" fill="#E05248">0x200030C0 ـ Stack به‌ارث‌رسیده از بوت‌لودر قدیمی</text>
-          <text x="340" y="160" text-anchor="middle" font-size="7.5" fill="#54748E">مبنای RAM برنامه 0x200000C0 است؛ فقط ۱۲٬۲۸۸ بایت پایین‌تر از Stack قدیمی ـ هم‌پوشانی قطعی بود، نه اتفاقی</text>
-          <text x="340" y="184" text-anchor="middle" font-size="8.5" font-weight="700" fill="#102333">پیامد هم‌پوشانی</text>
-          <text x="340" y="202" text-anchor="middle" font-size="8" fill="#2C4459">۱) پاک‌سازی (‎.bss‎) Return Address روی Stack را صفر می‌کرد ← HardFault در ثانیه‌های اول</text>
-          <text x="340" y="219" text-anchor="middle" font-size="8" fill="#2C4459">۲) در غیر این صورت دستگاه با دادهٔ خرابِ پنهان کار می‌کرد؛ خرابی‌ای که هر بار چهره‌اش عوض می‌شد</text>
-        </g>
+        <!-- مسیر پرش -->
+        <rect class="af-bd-node sig" x="452" y="16" width="204" height="52" rx="14"/>
+        <text class="af-bd-title" x="554" y="38" text-anchor="middle">بوت‌لودر FOTA ـ 0x08000000</text>
+        <text class="af-bd-sub" x="554" y="55" text-anchor="middle">پایان به‌روزرسانی: پرش به برنامه</text>
+        <rect class="af-bd-node" x="24" y="16" width="204" height="52" rx="14"/>
+        <text class="af-bd-title" x="126" y="38" text-anchor="middle">برنامهٔ اصلی ـ 0x08002000</text>
+        <text class="af-bd-sub" x="126" y="55" text-anchor="middle">جدول بردارها در ابتدای برنامه</text>
+        <path class="af-bd-link" d="M450,42 H232" marker-end="url(#arwFw)"/>
+        <text class="af-bd-flag" x="341" y="30" text-anchor="middle" style="fill:#D98E00">قبل ـ پرش بدون تنظیم MSP</text>
+        <text class="af-bd-flag" x="341" y="62" text-anchor="middle" style="fill:#0B74C9">بعد ـ تنظیم MSP از جدول برنامه</text>
+        <!-- نقشهٔ RAM -->
+        <text class="af-bd-cap" x="656" y="100" text-anchor="end">نقشهٔ RAM برنامه</text>
+        <rect x="24" y="112" width="632" height="42" rx="14" fill="#EFF7FC" stroke="#C3D9E8" stroke-width="1.2"/>
+        <rect x="24" y="112" width="330" height="42" rx="14" fill="#C3D9E8"/>
+        <rect x="476" y="112" width="180" height="42" rx="14" fill="#0E9BE8" opacity="0.28"/>
+        <text x="189" y="138" text-anchor="middle" font-size="9" font-weight="700" fill="#25455F">داده‌های برنامه (.bss/.data) ـ حدود ۱۵٫۴ KB</text>
+        <text x="566" y="138" text-anchor="middle" font-size="9" font-weight="700" fill="#0B74C9">Stack صحیح برنامه (CSTACK)</text>
+        <line x1="282" y1="104" x2="282" y2="164" stroke="#FF6659" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="282" cy="104" r="4.5" fill="#FF6659"/>
+        <text x="282" y="94" text-anchor="middle" font-size="8.5" font-weight="800" fill="#E05248">0x200030C0 ـ Stack به‌ارث‌رسیدهٔ بوت‌لودر قدیمی</text>
       </svg>
+      <div class="af-bd-note">این Stack قدیمی فقط ۱۲٬۲۸۸ بایت بالاتر از مبنای RAM برنامه بود — هم‌پوشانی قطعی، نه اتفاقی؛ پاک‌سازی <span class="af-ltr">.bss</span> همان‌جا <span class="af-ltr">Return Address</span> را صفر می‌کرد و نتیجه، <span class="af-ltr">HardFault</span> در ثانیه‌های اول اجرا بود.</div>
       <figcaption class="af-figure-foot"><span>نشانی‌ها و اندازه‌ها از کد مبدأ و جدول بردارهای دو نسخه استخراج شده‌اند</span><span class="af-ltr">MSP 0x200030C0 / RAM base 0x200000C0</span></figcaption>
     </figure>
 
@@ -428,35 +424,15 @@
         <div><div class="af-figure-title">زنجیرهٔ به‌روزرسانی دومرحله‌ای بوت‌لودر</div><div class="af-figure-sub">مرحلهٔ اول یک‌باره و برگشت‌ناپذیر است؛ مرحلهٔ دوم را بوت‌لودر جدید خودکار انجام می‌دهد.</div></div>
         <span class="af-figure-fig">شکل ۳</span>
       </div>
-      <svg class="af-chart-svg" viewBox="0 0 680 124" role="img" aria-label="زنجیرهٔ به‌روزرسانی دومرحله‌ای بوت‌لودر" style="font-family:'Peyda',Tahoma,sans-serif">
-        <defs><marker id="arw6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#54748E"/></marker></defs>
-        <rect x="534" y="14" width="146" height="60" rx="13" fill="#fff" stroke="#C3D9E8" stroke-width="1.4"/>
-        <text x="607" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#102333">دستور به‌روزرسانی</text>
-        <text x="607" y="59" text-anchor="middle" font-size="7.5" font-weight="700" fill="#0B74C9">#COM:913</text>
-        <rect x="356" y="14" width="146" height="60" rx="13" fill="#EFF7FC" stroke="#0E9BE8" stroke-width="1.4"/>
-        <text x="429" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#102333">کنترل پیش از نوشتن</text>
-        <text x="429" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">تطبیق بایت‌به‌بایت تصویر</text>
-        <rect x="178" y="14" width="146" height="60" rx="13" fill="#EFF7FC" stroke="#102333" stroke-width="1.4"/>
-        <text x="251" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#102333">بازنویسی بوت‌لودر</text>
-        <text x="251" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">صفحات ۰ تا ۳ Flash</text>
-        <rect x="0" y="14" width="146" height="60" rx="13" fill="#0E9BE8" fill-opacity="0.14" stroke="#0B74C9" stroke-width="1.4"/>
-        <text x="73" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#0B74C9">مرحلهٔ دوم خودکار</text>
-        <text x="73" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">تکمیل به‌روزرسانی</text>
-        <line x1="532" y1="44" x2="509" y2="44" stroke="#8DACC4" stroke-width="1.6" marker-end="url(#arw6)"/>
-        <line x1="354" y1="44" x2="331" y2="44" stroke="#8DACC4" stroke-width="1.6" marker-end="url(#arw6)"/>
-        <line x1="176" y1="44" x2="153" y2="44" stroke="#8DACC4" stroke-width="1.6" marker-end="url(#arw6)"/>
-        <text x="520" y="33" text-anchor="middle" font-size="7.5" font-weight="700" fill="#54748E">اجرا</text>
-        <text x="342" y="33" text-anchor="middle" font-size="7.5" font-weight="700" fill="#54748E">تطابق</text>
-        <text x="164" y="33" text-anchor="middle" font-size="7.5" font-weight="700" fill="#54748E">Reset</text>
-        <text x="607" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">فرمان پیامکی اپراتور</text>
-        <text x="607" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">دریافت ابزار از FTP</text>
-        <text x="429" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">اجرا در نشانی برنامه</text>
-        <text x="429" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">مقایسهٔ تصویر با مرجع</text>
-        <text x="251" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">نوشتن نسخهٔ تازه</text>
-        <text x="251" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">ثبت حالت به‌روزرسانی و ریست</text>
-        <text x="73" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">دریافت برنامهٔ اصلی از FTP</text>
-        <text x="73" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">پرش با Stack Pointer درست</text>
-      </svg>
+      <div class="af-flow">
+        <div class="af-flow-step dim"><div class="af-flow-num">مرحلهٔ ۰۱</div><div class="af-flow-title">دستور به‌روزرسانی</div><ul class="af-flow-list"><li>فرمان پیامکی اپراتور ـ <span class="af-ltr">#COM:913</span></li><li>دریافت ابزار به‌روزرسانی از <span class="af-ltr">FTP</span></li></ul></div>
+        <div class="af-flow-arrow"><span class="a">⟵</span><span class="p">اجرا</span></div>
+        <div class="af-flow-step dim"><div class="af-flow-num">مرحلهٔ ۰۲</div><div class="af-flow-title">کنترل پیش از نوشتن</div><ul class="af-flow-list"><li>اجرای فلشر در نشانی برنامه</li><li>تطبیق بایت‌به‌بایت تصویر با مرجع</li></ul></div>
+        <div class="af-flow-arrow"><span class="a">⟵</span><span class="p">تطابق</span></div>
+        <div class="af-flow-step ink"><div class="af-flow-num">مرحلهٔ ۰۳ ـ برگشت‌ناپذیر</div><div class="af-flow-title">بازنویسی بوت‌لودر</div><ul class="af-flow-list"><li>نوشتن نسخهٔ تازه در صفحات ۰ تا ۳ <span class="af-ltr">Flash</span></li><li>ثبت حالت به‌روزرسانی و ریست</li></ul></div>
+        <div class="af-flow-arrow"><span class="a">⟵</span><span class="p af-ltr">Reset</span></div>
+        <div class="af-flow-step aqua"><div class="af-flow-num">مرحلهٔ ۰۴ ـ خودکار</div><div class="af-flow-title">تکمیل به‌روزرسانی</div><ul class="af-flow-list"><li>دریافت برنامهٔ اصلی از <span class="af-ltr">FTP</span></li><li>پرش با <span class="af-ltr">Stack Pointer</span> درست</li></ul></div>
+      </div>
       <figcaption class="af-figure-foot"><span>خودِ نوشتن حدود یک ثانیه طول می‌کشد؛ بقیهٔ زمان، دانلود از FTP است</span><span class="af-ltr">resetCause = 0x4C</span></figcaption>
     </figure>
 
@@ -532,32 +508,15 @@
         <div><div class="af-figure-title">بازیابی پلکانی ارتباط GSM</div><div class="af-figure-sub">هر سطح فقط وقتی فعال می‌شود که سطح قبلی جواب نداده باشد؛ هدف این است که هیچ دستگاهی بی‌صدا و برای همیشه از دسترس خارج نماند.</div></div>
         <span class="af-figure-fig">شکل ۴</span>
       </div>
-      <svg class="af-chart-svg" viewBox="0 0 680 124" role="img" aria-label="بازیابی پلکانی ارتباط GSM" style="font-family:'Peyda',Tahoma,sans-serif">
-        <defs><marker id="arw7" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#54748E"/></marker></defs>
-        <rect x="534" y="14" width="146" height="60" rx="13" fill="#FDF3F1" stroke="#FF6659" stroke-width="1.4"/>
-        <text x="607" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#102333">گیرکردن ارتباط</text>
-        <text x="607" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">سکوت ماژول و اشباع حلقه</text>
-        <rect x="356" y="14" width="146" height="60" rx="13" fill="#EFF7FC" stroke="#0E9BE8" stroke-width="1.4"/>
-        <text x="429" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#102333">بازسازی UART</text>
-        <text x="429" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">سطح ۱ ـ بازیابی نرم</text>
-        <rect x="178" y="14" width="146" height="60" rx="13" fill="#EFF7FC" stroke="#0E9BE8" stroke-width="1.4"/>
-        <text x="251" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#102333">چرخهٔ برق ماژول</text>
-        <text x="251" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">سطح ۲ ـ بازیابی سخت</text>
-        <rect x="0" y="14" width="146" height="60" rx="13" fill="#0BBFA5" fill-opacity="0.13" stroke="#0BBFA5" stroke-width="1.4"/>
-        <text x="73" y="40" text-anchor="middle" font-size="9.5" font-weight="800" fill="#0A8A76">ریست کنترل‌شده</text>
-        <text x="73" y="59" text-anchor="middle" font-size="7.5" fill="#54748E">نگهبان (Guardian)</text>
-        <line x1="532" y1="44" x2="509" y2="44" stroke="#8DACC4" stroke-width="1.6" marker-end="url(#arw7)"/>
-        <line x1="354" y1="44" x2="331" y2="44" stroke="#8DACC4" stroke-width="1.6" marker-end="url(#arw7)"/>
-        <line x1="176" y1="44" x2="153" y2="44" stroke="#8DACC4" stroke-width="1.6" marker-end="url(#arw7)"/>
-        <text x="607" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">پاسخ ماژول نمی‌رسد</text>
-        <text x="607" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">داده روی نقشه ثابت می‌ماند</text>
-        <text x="429" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">خالی‌کردن حلقهٔ دریافت</text>
-        <text x="429" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">بازسازی پیوند سریال</text>
-        <text x="251" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">قطع و وصل کامل برق</text>
-        <text x="251" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">پس از ۳ دور تلاش ناموفق</text>
-        <text x="73" y="94" text-anchor="middle" font-size="7.5" fill="#2C4459">۳۰ تا ۶۰ دقیقه سکوت</text>
-        <text x="73" y="110" text-anchor="middle" font-size="7.5" fill="#2C4459">شروع تمیز کل دستگاه</text>
-      </svg>
+      <div class="af-flow">
+        <div class="af-flow-step bad"><div class="af-flow-num">سطح ۰ ـ نشانه</div><div class="af-flow-title">گیرکردن ارتباط</div><ul class="af-flow-list"><li>پاسخ ماژول نمی‌رسد</li><li>داده روی نقشه ثابت می‌ماند</li></ul></div>
+        <div class="af-flow-arrow"><span class="a">⟵</span><span class="p">بدون پاسخ</span></div>
+        <div class="af-flow-step sig"><div class="af-flow-num">سطح ۱ ـ بازیابی نرم</div><div class="af-flow-title">بازسازی <span class="af-ltr">UART</span></div><ul class="af-flow-list"><li>خالی‌کردن حلقهٔ دریافت</li><li>بازسازی پیوند سریال</li></ul></div>
+        <div class="af-flow-arrow"><span class="a">⟵</span><span class="p">بدون پاسخ</span></div>
+        <div class="af-flow-step sig"><div class="af-flow-num">سطح ۲ ـ بازیابی سخت</div><div class="af-flow-title">چرخهٔ برق ماژول</div><ul class="af-flow-list"><li>قطع و وصل کامل برق ماژول</li><li>پس از ۳ دور تلاش ناموفق</li></ul></div>
+        <div class="af-flow-arrow"><span class="a">⟵</span><span class="p">بدون پاسخ</span></div>
+        <div class="af-flow-step aqua"><div class="af-flow-num">نگهبان دستگاه</div><div class="af-flow-title">ریست کنترل‌شده</div><ul class="af-flow-list"><li>۳۰ تا ۶۰ دقیقه سکوت کامل ارتباط</li><li>شروع تمیز کل دستگاه</li></ul></div>
+      </div>
       <figcaption class="af-figure-foot"><span>شمارندهٔ هر بازیابی در جعبه‌سیاه دستگاه ثبت می‌شود و از روی داده‌ها قابل مشاهده است (صفحهٔ ۹)</span><span class="af-ltr">GSM Guardian</span></figcaption>
     </figure>
 

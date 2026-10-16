@@ -199,51 +199,60 @@
 
     <figure class="af-diagram">
       <div class="af-figure-head">
-        <div><div class="af-figure-title">بلوک‌دیاگرام سخت‌افزار ردیاب <span class="af-ltr">AF-GT900</span></div><div class="af-figure-sub">جریان از راست (ورودی‌ها) به چپ (واسط‌های خودرو)؛ تنها بلوک توپر، هستهٔ پردازش است.</div></div>
+        <div><div class="af-figure-title">بلوک‌دیاگرام سخت‌افزار ردیاب <span class="af-ltr">AF-GT900</span></div><div class="af-figure-sub">جریان از راست (ورودی‌ها) به چپ (واسط‌های خودرو)؛ پروتکل هر واسط روی اتصال آن نوشته شده و تنها بلوک توپر، هستهٔ پردازش است.</div></div>
         <span class="af-figure-fig">شکل ۲</span>
       </div>
-      <svg class="af-chart-svg" viewBox="0 0 680 248" role="img" aria-label="بلوک‌دیاگرام سخت‌افزار ردیاب" style="font-family:'Peyda',Tahoma,sans-serif">
+      <svg class="af-chart-svg" viewBox="0 0 680 224" role="img" aria-label="بلوک‌دیاگرام سخت‌افزار ردیاب" style="font-family:'Peyda',Tahoma,sans-serif">
         <defs><marker id="arw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#54748E"/></marker></defs>
-        <rect x="468" y="26" width="198" height="152" rx="16" fill="none" stroke="#C3D9E8" stroke-dasharray="4 4"/>
-        <text x="567" y="18" text-anchor="middle" font-size="8.5" font-weight="700" fill="#54748E">ورودی‌ها</text>
-        <rect x="14" y="26" width="198" height="152" rx="16" fill="none" stroke="#C3D9E8" stroke-dasharray="4 4"/>
-        <text x="113" y="18" text-anchor="middle" font-size="8.5" font-weight="700" fill="#54748E">واسط‌های خودرو</text>
-        <g font-size="10.5" font-weight="700" fill="#102333">
-          <rect x="482" y="38" width="170" height="40" rx="12" fill="#EFF7FC" stroke="#0E9BE8" stroke-width="1.4"/>
-          <text x="567" y="55" text-anchor="middle">گیرندهٔ ماهواره‌ای GNSS</text>
-          <text x="567" y="70" text-anchor="middle" font-size="7.5" font-weight="500" fill="#54748E">GPS · GLONASS · Galileo ـ L1/L5</text>
-          <rect x="482" y="90" width="170" height="40" rx="12" fill="#fff" stroke="#C3D9E8"/>
-          <text x="567" y="107" text-anchor="middle">مودم مخابراتی LTE Cat-1</text>
-          <text x="567" y="122" text-anchor="middle" font-size="7.5" font-weight="500" fill="#54748E">4G با بازگشت 2G ـ سیم‌کارت صنعتی</text>
-          <rect x="482" y="142" width="170" height="28" rx="12" fill="#fff" stroke="#C3D9E8"/>
-          <text x="567" y="160" text-anchor="middle">حسگرها: شتاب‌سنج، دما، ورودی دیجیتال</text>
-        </g>
+        <!-- عنوان ستون‌ها -->
+        <text class="af-bd-cap" x="572" y="22" text-anchor="middle">ورودی‌ها</text>
+        <text class="af-bd-cap" x="108" y="22" text-anchor="middle">واسط‌های خودرو</text>
+        <!-- ستون ورودی‌ها (راست) -->
         <g>
-          <rect x="278" y="66" width="150" height="76" rx="20" fill="#102333"/>
-          <circle cx="298" cy="86" r="3.5" fill="#0E9BE8"/>
-          <text x="353" y="102" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">هستهٔ پردازش</text>
-          <text x="353" y="120" text-anchor="middle" font-size="7.5" fill="#C3D9E8">فریم‌ور آتی فرزام ـ رویداد در لبه</text>
-          <text x="353" y="134" text-anchor="middle" font-size="7.5" fill="#8DACC4">TLS 1.3 · به‌روزرسانی OTA</text>
+          <rect class="af-bd-node sig" x="476" y="40" width="192" height="48" rx="14"/>
+          <text class="af-bd-title" x="572" y="60" text-anchor="middle">گیرندهٔ ماهواره‌ای GNSS</text>
+          <text class="af-bd-sub" x="572" y="76" text-anchor="middle">GPS · GLONASS · Galileo</text>
+          <rect class="af-bd-node" x="476" y="100" width="192" height="48" rx="14"/>
+          <text class="af-bd-title" x="572" y="120" text-anchor="middle">مودم مخابراتی LTE Cat-1</text>
+          <text class="af-bd-sub" x="572" y="136" text-anchor="middle">4G با بازگشت به 2G</text>
+          <rect class="af-bd-node" x="476" y="160" width="192" height="48" rx="14"/>
+          <text class="af-bd-title" x="572" y="180" text-anchor="middle">حسگرها و ورودی دیجیتال</text>
+          <text class="af-bd-sub" x="572" y="196" text-anchor="middle">شتاب‌سنج · دما · DI</text>
         </g>
-        <g font-size="10.5" font-weight="700" fill="#102333">
-          <rect x="28" y="38" width="170" height="40" rx="12" fill="#fff" stroke="#C3D9E8"/>
-          <text x="113" y="55" text-anchor="middle">گذرگاه CAN خودرو</text>
-          <text x="113" y="70" text-anchor="middle" font-size="7.5" font-weight="500" fill="#54748E">J1939 · سوخت و دور موتور</text>
-          <rect x="28" y="90" width="170" height="40" rx="12" fill="#fff" stroke="#C3D9E8"/>
-          <text x="113" y="107" text-anchor="middle">واسط‌های صنعتی</text>
-          <text x="113" y="122" text-anchor="middle" font-size="7.5" font-weight="500" fill="#54748E">RS-485 · رله · شناسهٔ راننده RFID</text>
-          <rect x="28" y="142" width="170" height="28" rx="12" fill="#fff" stroke="#C3D9E8"/>
-          <text x="113" y="160" text-anchor="middle">خروجی هشدار و قطع‌کن موتور</text>
+        <!-- هستهٔ پردازش (تنها بلوک توپر) -->
+        <g>
+          <rect class="af-bd-core" x="258" y="40" width="164" height="168" rx="20"/>
+          <circle cx="402" cy="64" r="4" fill="#0E9BE8"/>
+          <text class="af-bd-title on-ink" x="340" y="112" text-anchor="middle" style="font-size:12.5px;font-weight:900">هستهٔ پردازش</text>
+          <text class="af-bd-sub on-ink" x="340" y="134" text-anchor="middle">فریم‌ور آتی فرزام ـ رویداد در لبه</text>
+          <text class="af-bd-sub on-ink" x="340" y="152" text-anchor="middle" style="fill:#8DACC4">TLS 1.3 · به‌روزرسانی OTA</text>
         </g>
-        <rect x="278" y="196" width="150" height="34" rx="12" fill="#EFF7FC" stroke="#C3D9E8"/>
-        <text x="353" y="211" text-anchor="middle" font-size="9.5" font-weight="700" fill="#102333">مدیریت توان و حافظه</text>
-        <text x="353" y="224" text-anchor="middle" font-size="7.2" fill="#54748E">9 تا 36 ولت · باتری پشتیبان · ۵۰٬۰۰۰ رکورد</text>
-        <g stroke="#8DACC4" stroke-width="1.2" fill="none">
-          <path d="M482,58 L430,88" marker-end="url(#arw)"/><path d="M482,110 L430,106" marker-end="url(#arw)"/><path d="M482,156 L430,124" marker-end="url(#arw)"/>
-          <path d="M278,88 L200,60" marker-end="url(#arw)"/><path d="M278,106 L200,108" marker-end="url(#arw)"/><path d="M278,124 L200,154" marker-end="url(#arw)"/>
-          <path d="M353,142 L353,194" marker-end="url(#arw)"/>
+        <!-- ستون واسط‌های خودرو (چپ) -->
+        <g>
+          <rect class="af-bd-node" x="12" y="40" width="192" height="48" rx="14"/>
+          <text class="af-bd-title" x="108" y="60" text-anchor="middle">گذرگاه CAN خودرو</text>
+          <text class="af-bd-sub" x="108" y="76" text-anchor="middle">J1939 · سوخت و دور موتور</text>
+          <rect class="af-bd-node" x="12" y="100" width="192" height="48" rx="14"/>
+          <text class="af-bd-title" x="108" y="120" text-anchor="middle">واسط‌های صنعتی</text>
+          <text class="af-bd-sub" x="108" y="136" text-anchor="middle">RS-485 · رله · RFID</text>
+          <rect class="af-bd-node" x="12" y="160" width="192" height="48" rx="14"/>
+          <text class="af-bd-title" x="108" y="180" text-anchor="middle">خروجی هشدار و قطع‌کن</text>
+          <text class="af-bd-sub" x="108" y="196" text-anchor="middle">فرمان قطع موتور از پنل</text>
         </g>
-        <g font-size="7" fill="#54748E" font-family="Consolas,monospace" text-anchor="middle"><text x="455" y="72">UART</text><text x="455" y="100">UART</text><text x="455" y="140">I2C</text><text x="238" y="66">CAN</text><text x="238" y="100">RS-485</text><text x="353" y="172">PWR · SPI</text></g>
+        <!-- اتصال‌های ارتوگونال -->
+        <g class="af-bd-link">
+          <path d="M474,64 H428" marker-end="url(#arw)"/><path d="M474,124 H428" marker-end="url(#arw)"/><path d="M474,184 H428" marker-end="url(#arw)"/>
+          <path d="M252,64 H208" marker-end="url(#arw)"/><path d="M252,124 H208" marker-end="url(#arw)"/><path d="M252,184 H208" marker-end="url(#arw)"/>
+        </g>
+        <!-- قرص برچسب گذرگاه -->
+        <g>
+          <rect class="af-bd-chip" x="437" y="57" width="28" height="14" rx="7"/><text class="af-bd-chip-t" x="451" y="67.4" text-anchor="middle">UART</text>
+          <rect class="af-bd-chip" x="437" y="117" width="28" height="14" rx="7"/><text class="af-bd-chip-t" x="451" y="127.4" text-anchor="middle">UART</text>
+          <rect class="af-bd-chip" x="440" y="177" width="22" height="14" rx="7"/><text class="af-bd-chip-t" x="451" y="187.4" text-anchor="middle">I2C</text>
+          <rect class="af-bd-chip" x="217" y="57" width="26" height="14" rx="7"/><text class="af-bd-chip-t" x="230" y="67.4" text-anchor="middle">CAN</text>
+          <rect class="af-bd-chip" x="212" y="117" width="36" height="14" rx="7"/><text class="af-bd-chip-t" x="230" y="127.4" text-anchor="middle">RS-485</text>
+          <rect class="af-bd-chip" x="216" y="177" width="28" height="14" rx="7"/><text class="af-bd-chip-t" x="230" y="187.4" text-anchor="middle">GPIO</text>
+        </g>
       </svg>
       <figcaption class="af-figure-foot"><span>بدنه <span class="af-ltr">IP67</span> · دمای کاری <span class="af-ltr">−40 تا +85 °C</span></span><span>بازبینی سخت‌افزار <span class="af-ltr">Rev C</span> · فریم‌ور <span class="af-ltr">4.7.2</span></span></figcaption>
     </figure>
